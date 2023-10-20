@@ -30,6 +30,13 @@ body {
   color: rgb(0, 255, 0);
 }
 
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  #card-wrapper {
+    grid-template-columns: 1fr; /* Stacking cards on top of each other */
+  }
+}
+
   /* Option 1:
 Background: Midnight Blue (RGB: 25, 25, 112)
 Accent: Glowing Green (RGB: 0, 255, 0)

@@ -6,13 +6,13 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Three cards per row */
   gap: 20px; /* Adjust the gap between cards */
-  cursor: pointer;
   border-radius: 10px;
 }
 
 .card {
   background: rgb( 0, 0, 255);
   border-radius: 10px;
+  cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 

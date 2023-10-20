@@ -20,7 +20,10 @@
     const storyFiles = ['desert-island', 'desert-island', 'desert-island', 'desert-island', 'desert-island', 'desert-island'];
     const cardWrapper = document.getElementById('card-wrapper');
 
-    // Fetch JSON data for the specified stories
+    /**
+     * Fetch JSON data for the specified story.
+     * @param {string} story - The name of the story.
+     */
     const fetchStoryData = async (story) => {
         try {
             const response = await fetch(`assets/js/stories/${story}.json`);
@@ -36,7 +39,10 @@
         }
     };
 
-    // Create a card element with provided details
+    /**
+     * Create a card element with provided details.
+     * @param {Object} story details
+     */
     const createCardElement = (details) => {
         const card = document.createElement('article');
         card.className = 'card';
@@ -66,12 +72,18 @@
         return card;
     };
 
-    // Append a card element to the card wrapper
+    /**
+     * Append a card element to the card wrapper.
+     * @param {HTMLElement} card
+     */
     const appendCardToWrapper = (card) => {
         cardWrapper.appendChild(card);
     };
 
-    // Process story data and create cards
+    /**
+      * Process story data and create cards for each story.
+      * @param {string[]} storyFiles An array of story filenames.
+      */
     const processStoryData = async (storyFiles) => {
         for (const story of storyFiles) {
             const storyData = await fetchStoryData(story);
@@ -84,5 +96,4 @@
 
     // Call the function to start fetching and creating cards
     processStoryData(storyFiles);
-
 </script>

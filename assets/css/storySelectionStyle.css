@@ -2,24 +2,18 @@ body {
   background-color: rgb(34, 34, 34);
 }
 
-#story-section-wrapper {
-}
-
 #card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three cards per row */
+  gap: 20px; /* Adjust the gap between cards */
   cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem 0;
-  width: 22rem;
-  background-color: rgb(25, 25, 112);
   border-radius: 10px;
 }
 
-#card-wrapper:hover {
-  background-color: rgba(0, 0, 255);
-  box-shadow: rgba(0, 0, 255, 0.24) 0px 3px 8px;
-  transition: ease-in 0.1s;
+.card {
+  background: rgb( 0, 0, 255);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .card-image {

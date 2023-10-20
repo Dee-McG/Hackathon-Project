@@ -64,4 +64,21 @@
         "question": "How will you confront the spirit, {char}?",
         "choices": [
             {"action": "Bargain with the spirit", "result": "Seeking a peaceful resolution, {char} tried to negotiate their freedom.", "next": "ending_0"},
-            {"action": "Challenge the spirit to a duel", "result": "With courage in their heart, {char} stood their ground
+            {"action": "Challenge the spirit to a duel", "result": "With courage in their heart, {char} stood their ground against the menacing entity.", "next": "ending_1"},
+            {"action": "Offer to help lift the curse", "result": "Believing in redemption, {char} set out to free the mansion from its chains of sorrow.", "next": "ending_2"}
+        ],
+        "epilogue": "In a world filled with darkness, {char}'s light shone the brightest."
+    },
+    "ending_0": {
+        "dialogue": "The mansion's curse was too powerful, and {char} became its latest victim. Their soul now forever trapped within its walls.",
+        "epilogue": "And so, another tale was woven into the fabric of the mansion's haunted history."
+    },
+    "ending_1": {
+        "dialogue": "Against all odds, {char} emerged victorious. The spirit, defeated, released its hold on the mansion, setting free the countless souls it had ensnared.",
+        "epilogue": "With the curse lifted, the mansion faded away, leaving behind only the tales of its haunting legacy."
+    },
+    "ending_2": {
+        "dialogue": "{char} found a way to break the curse, uniting the spirits in a final, harmonious dance. The mansion was transformed into a beacon of hope and healing.",
+        "epilogue": "And thus, the once-haunted mansion became a haven for lost souls seeking redemption."
+    }
+}

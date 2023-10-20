@@ -19,6 +19,7 @@
 <script>
     const storyFiles = ['desert-island', 'haunted-hotel', 'desert-island', 'desert-island', 'desert-island', 'desert-island'];
     const cardWrapper = document.getElementById('card-wrapper');
+    selectedStory = null; // Global variable for the selected story
 
     /**
      * Fetch JSON data for the specified story.
@@ -97,9 +98,7 @@
         if (clickedElement) {
             // Extract the story name from the clicked card's title
             const cardTitle = clickedElement.querySelector('h2');
-            const storyName = cardTitle.textContent;
-            console.log('Clicked story:', storyName);
+            const selectedStory = cardTitle.textContent;
         }
     });
-
 </script>

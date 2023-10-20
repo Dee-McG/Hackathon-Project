@@ -25,7 +25,7 @@ const loadDialogue = (story, scene) => {
 };
 
 /**
- * Extracts the scene options from the current scene and loads into the choice buttons
+ * Extracts the scene options from the current scene and loads into html
  * @param {object} scene - Current scene from the story
  */
 const loadQuestion = (scene) => {

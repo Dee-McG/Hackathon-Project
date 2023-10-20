@@ -1,0 +1,47 @@
+body {
+  background-color: rgb(34, 34, 34);
+}
+
+#story-section-wrapper {
+}
+
+#card-wrapper {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem 0;
+  width: 22rem;
+  background-color: rgb(25, 25, 112);
+  border-radius: 10px;
+}
+
+#card-wrapper:hover {
+  background-color: rgba(0, 0, 255);
+  box-shadow: rgba(0, 0, 255, 0.24) 0px 3px 8px;
+  transition: ease-in 0.1s;
+}
+
+.card-image {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+
+.content-wrapper, h2, p {
+  text-align: center;
+  color: #fff;
+}
+
+.content-wrapper, h2 {
+  color: rgb(0, 255, 0);
+}
+
+  /* Option 1:
+Background: Midnight Blue (RGB: 25, 25, 112)
+Accent: Glowing Green (RGB: 0, 255, 0)
+Interactive Elements: Electric Blue (RGB: 0, 0, 255)
+
+Option Two:
+Background: Charcoal Black (RGB: 34, 34, 34)
+Accent: Blood Red (RGB: 139, 0, 0)
+Interactive Elements: Dark Violet (RGB: 148, 0, 211) */

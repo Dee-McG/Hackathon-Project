@@ -21,6 +21,21 @@ const loadDialogue = (story, scene) => {
     } else {
         console.error("Dialogue for the current scene not found.");
     }
+    loadChoices(story[scene]);
 };
+
+/**
+ * Extracts the scene options from the current scene and loads into the choice buttons
+ * @param {object} scene - Current scene from the story
+ */
+const loadChoices = (scene) => {
+    const choices = document.querySelectorAll(".choice");
+
+    choices.forEach((choice, index) => {
+        choice.innerHTML = scene.choices[index].action;
+    });
+}
+
+
 // Test it works
 loadStoryFromJson("desert-island");

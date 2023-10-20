@@ -15,7 +15,7 @@ const loadStoryFromJson = async (story) => {
  *
  * @param {Object} story - The story object loaded from the JSON.
  */
-const loadDialogue = (story, scene = "scene_one") => {
+const loadDialogue = (story, scene) => {
     const dialogue = story[scene]?.dialogue;
     const storyboard = document.querySelector('#storyboard'); // update this once story board is created
     if (dialogue) {

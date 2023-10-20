@@ -21,8 +21,18 @@ const loadDialogue = (story, scene) => {
     } else {
         console.error("Dialogue for the current scene not found.");
     }
-    loadChoices(story[scene]);
+    loadQuestion(story[scene]);
 };
+
+/**
+ * Extracts the scene options from the current scene and loads into html
+ * @param {object} scene - Current scene from the story
+ */
+const loadQuestion = (scene) => {
+    const question = document.getElementById("question");
+    question.innerText = scene.question;
+    loadChoices(scene);
+}
 
 /**
  * Extracts the scene options from the current scene and loads into the choice buttons
@@ -32,7 +42,7 @@ const loadChoices = (scene) => {
     const choices = document.querySelectorAll(".choice");
 
     choices.forEach((choice, index) => {
-        choice.innerHTML = scene.choices[index].action;
+        choice.innerText = scene.choices[index].action;
     });
 }
 

@@ -1,0 +1,67 @@
+{
+    "scene_one": {
+        "dialogue": "The forest was alive with the sounds of the night. From the gentle rustling of leaves to the distant hoots of an owl, everything felt eerily serene. However, as {char} ventured deeper into the woods, the atmosphere shifted. Ancient trees with twisted limbs blocked out the moonlight, and a thick, suffocating mist rolled in. Before {char} stood three dilapidated mansions, each more menacing than the last.",
+        "question": "Which mansion will you enter, {char}?",
+        "choices": [
+            {"action": "The Whispering Willow", "result": "An old Victorian home, its turrets casting long, dark shadows on the overgrown garden.", "next": "scene_two_0"},
+            {"action": "The Cursed Crypt", "result": "A sprawling manor with ivy-covered walls and shattered windows, from which a faint blue glow emanated.", "next": "scene_two_1"},
+            {"action": "The Phantom Palace", "result": "A grand estate, where ghostly apparitions could be seen drifting through the grand ballroom.", "next": "scene_two_2"}
+        ],
+        "epilogue": "{char}'s decision could alter their fate forever."
+    },
+    "scene_two_0": {
+        "dialogue": "Upon entering the Whispering Willow, {char} was met by an eerie silence. Suddenly, a soft voice whispered their name. Following the sound, they came across a spectral lady in a white gown, her eyes hollow and filled with sorrow. With a mournful sigh, she handed {char} a wilted rose.",
+        "question": "What will you do next, {char}?",
+        "choices": [
+            {"action": "Offer the ghostly lady a curtsy", "result": "{char} lowered themselves in a gesture of respect, causing the spectral lady to smile faintly.", "next": "scene_three_0"},
+            {"action": "Flee from the mansion", "result": "{char} turned on their heels and dashed out of the Whispering Willow, their heart racing.", "next": "scene_three_1"},
+            {"action": "Ask her story", "result": "With courage, {char} approached the apparition, eager to uncover the secrets of the mansion.", "next": "scene_three_2"}
+        ],
+        "epilogue": "Every corner of the Whispering Willow held a story yearning to be told."
+    },
+    "scene_two_1": {
+        "dialogue": "Inside the Cursed Crypt, dark shadows danced upon the walls, and a chill ran down {char}'s spine. In the heart of the mansion, an ancient crypt awaited, guarded by statues of grotesque creatures.",
+        "question": "What's your next move, {char}?",
+        "choices": [
+            {"action": "Explore the crypt", "result": "Driven by curiosity, {char} descended into the crypt, each step echoing in the vast chamber.", "next": "scene_three_0"},
+            {"action": "Try to find another exit", "result": "Feeling a growing unease, {char} decided to search for a safer way out of the mansion.", "next": "scene_three_1"},
+            {"action": "Confront the statues", "result": "{char} bravely approached the statues, sensing a hidden power within them.", "next": "scene_three_2"}
+        ],
+        "epilogue": "The Cursed Crypt held dark secrets that few dared to uncover."
+    },
+    "scene_two_2": {
+        "dialogue": "Within the Phantom Palace, the grand ballroom was alive with ghostly figures dancing to a haunting melody. An elegant phantom beckoned {char} to join the dance.",
+        "question": "Do you dare dance, {char}?",
+        "choices": [
+            {"action": "Accept the phantom's invitation", "result": "Entranced, {char} took the phantom's hand and joined the eternal dance.", "next": "scene_three_0"},
+            {"action": "Decline and search the palace", "result": "{char} politely declined, choosing instead to explore the depths of the palace.", "next": "scene_three_1"},
+            {"action": "Challenge the phantom", "result": "With a bold stance, {char} confronted the phantom, seeking answers.", "next": "scene_three_2"}
+        ],
+        "epilogue": "The Phantom Palace was a place of beauty and sorrow, where time stood still."
+    },
+    "scene_three_0": {
+        "dialogue": "{char} found themselves in a chamber filled with portraits of previous visitors. Each portrait captured the very essence of its subject, their eyes filled with terror and regret.",
+        "question": "What will you do, {char}?",
+        "choices": [
+            {"action": "Search for an exit", "result": "Desperation fueled {char}'s search for a way out of this nightmarish place.", "next": "ending_0"},
+            {"action": "Try to communicate with the portraits", "result": "Hoping for a clue, {char} attempted to interact with the trapped souls.", "next": "ending_1"},
+            {"action": "Destroy the portraits", "result": "In a fit of rage, {char} sought to free the souls by tearing apart the paintings.", "next": "ending_2"}
+        ],
+        "epilogue": "The weight of countless souls weighed heavily on {char}'s conscience."
+    },
+    "scene_three_1": {
+        "dialogue": "Stumbling upon a decrepit library, {char} noticed a glowing book. The title read: 'The Secrets of the Mansion.'",
+        "question": "Will you open it, {char}?",
+        "choices": [
+            {"action": "Read the glowing book", "result": "Captivated, {char} opened the book, and a whirlwind of memories flooded their mind.", "next": "ending_0"},
+            {"action": "Ignore the book", "result": "Choosing caution over curiosity, {char} continued their quest to escape the mansion.", "next": "ending_1"},
+            {"action": "Seal the book away", "result": "Believing the book to be a source of evil, {char} sought to lock it away forever.", "next": "ending_2"}
+        ],
+        "epilogue": "In the face of overwhelming odds, {char}'s determination never wavered."
+    },
+    "scene_three_2": {
+        "dialogue": "Suddenly, {char} was face to face with the mastermind behind the mansion's curse, a malevolent spirit seeking eternal companionship.",
+        "question": "How will you confront the spirit, {char}?",
+        "choices": [
+            {"action": "Bargain with the spirit", "result": "Seeking a peaceful resolution, {char} tried to negotiate their freedom.", "next": "ending_0"},
+            {"action": "Challenge the spirit to a duel", "result": "With courage in their heart, {char} stood their ground

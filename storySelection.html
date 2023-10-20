@@ -9,8 +9,8 @@
 </head>
 
 <body>
-    <div id="story-section-wrapper" role="main">
-        <div id="card-wrapper" role="list">
+    <div id="story-section-wrapper">
+        <div id="card-wrapper">
         </div>
     </div>
 </body>
@@ -63,11 +63,6 @@
         card.appendChild(cardImage);
         card.appendChild(cardTitle);
         card.appendChild(cardDescription);
-
-        // Add ARIA attributes for better accessibility
-        card.setAttribute('role', 'card');
-        cardTitle.setAttribute('role', 'heading');
-        cardTitle.setAttribute('aria-level', '2');
 
         return card;
     };

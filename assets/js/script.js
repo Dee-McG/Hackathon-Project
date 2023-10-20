@@ -44,8 +44,20 @@ const loadChoices = (scene) => {
     choices.forEach((choice, index) => {
         choice.innerText = scene.choices[index].action;
     });
+
+    loadEpilogue(scene);
 }
 
+/**
+ * Extracts the scene options from the current scene and loads the epilogue into html
+ * @param {object} scene - Current scene from the story
+ */
+const loadEpilogue = (scene) => {
+    const epilogue = document.getElementById("epilogue");
+
+    epilogue.innerText = scene.epilogue;
+    // TODO - Call next scene function
+}
 
 // Test it works
 loadStoryFromJson("desert-island");

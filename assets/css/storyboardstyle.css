@@ -1,0 +1,16 @@
+.dialogue {
+    text-align: center;
+    width: 90%;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    padding:50px;
+    border: 1px solid black;
+    font-size: 20px;
+    font-family: 'Creepster', cursive;
+    border-radius: 20px;
+    display: flex;
+    margin:20px;
+    background-color: rgb(25, 25, 112);
+    color: white;
+}

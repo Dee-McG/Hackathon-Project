@@ -1,3 +1,5 @@
+let currentStory;
+
 /**
  * Loads the selected story json file
  * The param will need to be be the same as the file name
@@ -14,6 +16,7 @@ const loadStoryFromJson = async (story) => {
  * @param {Object} story - The story object loaded from the JSON.
  */
 const loadDialogue = (story, scene) => {
+    currentStory = story;
     const dialogue = story[scene]?.dialogue;
     const storyboard = document.querySelector("#storyboard"); // update this once story board is created
     if (dialogue) {

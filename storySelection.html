@@ -17,7 +17,7 @@
 
 </html>
 <script>
-    const storyFiles = ['desert-island', 'desert-island', 'desert-island', 'desert-island', 'desert-island', 'desert-island'];
+    const storyFiles = ['desert-island', 'haunted-hotel', 'desert-island', 'desert-island', 'desert-island', 'desert-island'];
     const cardWrapper = document.getElementById('card-wrapper');
 
     /**
@@ -96,4 +96,15 @@
 
     // Call the function to start fetching and creating cards
     processStoryData(storyFiles);
+
+    cardWrapper.addEventListener('click', (event) => {
+        const clickedElement = event.target.closest('.card');
+        if (clickedElement) {
+            // Extract the story name from the clicked card's title
+            const cardTitle = clickedElement.querySelector('h2');
+            const storyName = cardTitle.textContent;
+            console.log('Clicked story:', storyName);
+        }
+    });
+
 </script>

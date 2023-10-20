@@ -11,8 +11,6 @@ const loadStoryFromJson = async (story) => {
 
 /**
  * Extracts the dialogue of the current scene from the provided story object.
- * Assumes a default starting scene if no other scene is specified.
- *
  * @param {Object} story - The story object loaded from the JSON.
  */
 const loadDialogue = (story, scene) => {

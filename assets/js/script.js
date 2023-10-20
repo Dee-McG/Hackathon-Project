@@ -6,7 +6,7 @@
 const loadStoryFromJson = async (story) => {
     const response = await fetch(`assets/js/stories/${story}.json`);
     const res = await response.json();
-    loadDialogue(res);
+    loadDialogue(res, "scene_one");
 };
 
 /**

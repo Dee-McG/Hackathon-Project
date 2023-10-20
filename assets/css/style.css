@@ -1,0 +1,36 @@
+body {
+    background-color: #2a2a2a;
+    font-family: 'Creepster', cursive; 
+}
+
+h1, h2, h3 {
+    color: #ff5722;
+}
+
+p {
+    color: #eee;
+}
+
+.button {
+    background-color: #ff5722;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #e64a19;
+}
+
+/* Add some spooky icons or background images */
+.spooky-icon {
+    background: url('path_to_spooky_icon.png') no-repeat;
+}

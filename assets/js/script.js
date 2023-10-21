@@ -281,3 +281,8 @@ function replaceCharWithCharacterName(text) {
   return text.replace(/{char}/g, charName);
 }
 
+const playSound = (soundURL) => {
+  if (!soundURL) return;
+  let audio = new Audio(soundURL);
+  audio.play();
+}

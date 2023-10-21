@@ -1,5 +1,15 @@
+:root {
+  --title-font: 'Creepster', cursive;
+}
+
 body {
   background-color: rgb(34, 34, 34);
+}
+
+#story-selection-heading {
+  text-align: center;
+  color: rgb(0, 255, 0);
+  font-family: var(--title-font, cursive);
 }
 
 #card-wrapper {
@@ -10,7 +20,7 @@ body {
 }
 
 .card {
-  background: rgb( 0, 0, 255);
+  background: rgb( 25, 25, 112);
   border-radius: 10px;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -28,6 +38,7 @@ body {
 
 .content-wrapper, h2 {
   color: rgb(0, 255, 0);
+  font-family: var(--title-font, cursive);
 }
 
 /* Media query for screens with a maximum width of 768px */
@@ -36,13 +47,3 @@ body {
     grid-template-columns: 1fr; /* Stacking cards on top of each other */
   }
 }
-
-  /* Option 1:
-Background: Midnight Blue (RGB: 25, 25, 112)
-Accent: Glowing Green (RGB: 0, 255, 0)
-Interactive Elements: Electric Blue (RGB: 0, 0, 255)
-
-Option Two:
-Background: Charcoal Black (RGB: 34, 34, 34)
-Accent: Blood Red (RGB: 139, 0, 0)
-Interactive Elements: Dark Violet (RGB: 148, 0, 211) */

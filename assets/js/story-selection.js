@@ -1,10 +1,10 @@
+// Add all stories here
 const storyFiles = [
   "desert-island",
+  "haunted-forest",
   "haunted-hotel",
-  "desert-island",
-  "desert-island",
-  "desert-island",
-  "desert-island",
+  "haunted-mansion",
+  "pirate-ship",
 ];
 const cardWrapper = document.getElementById("card-wrapper");
 selectedStory = null; // Global variable for the selected story

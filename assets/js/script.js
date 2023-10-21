@@ -280,3 +280,4 @@ function replaceCharWithCharacterName(text) {
   const charName = sessionStorage.getItem("characterName") || "DefaultName"; 
   return text.replace(/{char}/g, charName);
 }
+

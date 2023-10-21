@@ -1,4 +1,10 @@
 {
+  "details": {
+    "name": "haunted-hotel",
+    "about": "lorem ipsum dolor sit amet",
+    "image": "https://answers.flexsim.com/themes/base/admin/img/default-coverImage.png",
+    "alt": "this is the alt"
+  },
   "scene_one": {
       "dialogue": "After a long, exhausting day, {char} finally settled into their hotel room. The soft lamplight cast a warm, inviting glow over the cozy space, promising a well-deserved rest. As the night deepened, a peaceful sleep embraced them. But suddenly, in the early hours, a loud, unexpected bang jolted {char} awake. Their heart raced as they groped for the lamp switch, flooding the room with a soft, eerie light. They cautiously stepped onto the cool floor, each footfall echoing through the silence. The door loomed ahead, its shadowy outline making them wonder what awaited them on the other side.",
       "question": "What do you do now?",

@@ -1,4 +1,10 @@
 {
+    "details": {
+        "name": "desert-island",
+        "about": "lorem ipsum dolor sit amet",
+        "image": "https://answers.flexsim.com/themes/base/admin/img/default-coverImage.png",
+        "alt": "this is the alt"
+    },
     "scene_one": {
         "dialogue": "Halloween has come round again, you and three friends are going to celebrate differently this year, you are going to a desert island, twenty four hours with no escape what will this trip bring for you and your friends. It starts well enough you are dropped off as the sun begins to sink below the clouds, the boat disappears from view as you look at each other, this was really happening, how was the friendships going to be tested, could you make it through to the boat returning? Your three friends look at you to see what you want to do, 'lets explore' you said. We grab our bags and set off into the trees when suddenly we see a strange set of lights in front of us",
         "question": "What do you do now?",

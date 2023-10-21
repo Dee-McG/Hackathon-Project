@@ -1,0 +1,49 @@
+:root {
+  --title-font: 'Creepster', cursive;
+}
+
+body {
+  background-color: rgb(34, 34, 34);
+}
+
+#story-selection-heading {
+  text-align: center;
+  color: rgb(0, 255, 0);
+  font-family: var(--title-font, cursive);
+}
+
+#card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three cards per row */
+  gap: 20px; /* Adjust the gap between cards */
+  border-radius: 10px;
+}
+
+.card {
+  background: rgb( 25, 25, 112);
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card-image {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+
+.content-wrapper, h2, p {
+  text-align: center;
+  color: #fff;
+}
+
+.content-wrapper, h2 {
+  color: rgb(0, 255, 0);
+  font-family: var(--title-font, cursive);
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  #card-wrapper {
+    grid-template-columns: 1fr; /* Stacking cards on top of each other */
+  }
+}

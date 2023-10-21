@@ -1,174 +1,180 @@
 {
-    "scene_one": {
-      "dialogue": "Standing in front of a mysterious and eerie mansion on a dark Halloween night, {char} a group of friends contemplate their options. The wind howls and the trees sway ominously, {char} adding to the eerie atmosphere.",
-      "question": "There are three friends, {char}, which do you choose?",
-      "choices": [
-        {
-          "action": "Feel uneasy about the mansion and question going in.",
-          "result": "Guys, this mansion gives me the creeps. Are you sure we should go in?",
-          "next": "scene_two_0"
-        },
-        {
-          "action": "Show excitement and encourage entering the mansion.",
-          "result": "Come on, it's Halloween! What's the worst that could happen?",
-          "next": "scene_two_1"
-        },
-        {
-          "action": "Express fear and hesitation about the situation.",
-          "result": "I don't know, but I have a bad feeling about this.",
-          "next": "scene_two_2"
-        }
-      ],
-      "epilogue": "Alex's uneasiness proved justified as the group entered the mansion cautiously. {char} The door slammed shut behind them, sealing their fate. Now, in the dimly lit hallway with three doors, {char} they must face the horrors that lie ahead."
-    },
-    "scene_two_0": {
-      "dialogue": "As the group cautiously enters the mansion, the door slams shut behind them, trapping them inside. They find themselves in a dimly lit hallway with three doors.",
-      "question": "Which way should we go?",
-      "choices": [
-        {
-          "action": "Emily decides to go upstairs and explore the bedrooms.",
-          "result": "Let's split up and search for clues. I'll go upstairs and explore the bedrooms.",
-          "next": "scene_three_0"
-        },
-        {
-          "action": "Ethan suggests investigating the creepy basement.",
-          "result": "I'll investigate the creepy basement. Maybe we'll find something useful there.",
-          "next": "scene_three_0"
-        },
-        {
-          "action": "Alex proposes searching the living room.",
-          "result": "I'll search the living room. Hopefully, we'll find a way out.",
-          "next": "scene_three_0"
-        }
-      ],
-      "epilogue": "Alex's nervousness proved justified as the group entered the mansion cautiously. {char} The door slammed shut behind them, sealing their fate. Now, in the dimly lit hallway with three doors, {char} they must face the horrors that lie ahead."
-    },
-    "scene_two_1": {
-      "dialogue": "As the friends sprint away from the mansion, they turn around and see a ghostly figure chasing them. Panic sets in, and they quickly consider their options.",
-      "question": "What should we do?",
-      "choices": [
-        {
-          "action": "Alex",
-          "result": "Quick, let's hide in the nearby graveyard!",
-          "next": "scene_three_3"
-        },
-        {
-          "action": "Emily",
-          "result": "No, that's too obvious. Let's seek refuge in that nearby abandoned cabin.",
-          "next": "scene_three_4"
-        },
-        {
-          "action": "Ethan",
-          "result": "No time to waste! Let's try to outrun the ghost and find a safe place.",
-          "next": "scene_three_5"
-        }
-      ],
-      "epilogue": "Emily's boldness emboldened the group as they sprinted away from the mansion. {char} However, a ghostly figure pursued them relentlessly, turning their Halloween night into a heart-pounding race for survival. {char}"
-    },
-    "scene_two_2": {
-      "dialogue": "To their surprise, the door creaks open slowly, revealing a dimly lit hallway with three doors.",
-      "question": "Which room should we enter first?",
-      "choices": [
-        {
-          "action": "Emily",
-          "result": "Let's go left. It's always good to start from the left, right?",
-          "next": "scene_three_6"
-        },
-        {
-          "action": "Ethan",
-          "result": "No, I have a feeling we should explore the room on the right.",
-          "next": "scene_three_7"
-        },
-        {
-          "action": "Alex",
-          "result": "Or maybe we should just proceed straight ahead to the end of the hallway.",
-          "next": "scene_three_8"
-        }
-      ],
-      "epilogue": "Ethan's intuition guided the group as they cautiously entered the mansion. {char} The door creaked open, revealing a dimly lit hallway with three doors. Little did they know, their choices would determine their fate. {char}{char}"
-    },
-    "scene_three_0": {
-      "dialogue": "As they make their way into the bedroom",
-      "question": "What are they to expect?",
-      "choices": [
-        {
-          "action": "Alex",
-          "result": "This is not good! We need to get out of here!",
-          "next": "scene_three_9"
-        },
-        {
-          "action": "Emily",
-          "result": "Quick, let's escape through the window before those dolls reach us!",
-          "next": "scene_three_10"
-        },
-        {
-          "action": "Ethan",
-          "result": "Wait, maybe we can try to calm the dolls down. They might not be as dangerous as they seem.",
-          "next": "scene_three_11"
-        },
-        {
-          "action": "Emily",
-          "result": "No time for that! Let's search for a hidden passage. There must be another way out!",
-          "next": "scene_three_12"
-        }
-      ],
-      "epilogue": "Emily's quick thinking and determination paid off as they managed to escape through the window just in time. The dolls, unable to follow, returned to their lifeless state. The friends regrouped outside, relieved to have evaded the danger lurking in the room. {char} They continued their search for a hidden passage, hoping to find another way out of the mansion. {char}"
-    },
-    "scene_three_1": {
-      "dialogue": "Investigate the creepy basement.",
-      "question": "What should they expect in a dark and damp basement?",
-      "choices": [
-        {
-          "action": "Alex",
-          "result": "Oh no, a vampire! We need to act fast!",
-          "next": "scene_three_13"
-        },
-        {
-          "action": "Emily",
-          "result": "I'll try to find a wooden stake. It's our best chance to fight the vampire off!",
-          "next": "scene_three_14"
-        },
-        {
-          "action": "Ethan",
-          "result": "Wait, let's look for an escape route. We can't take on a vampire!",
-          "next": "scene_three_15"
-        },
-        {
-          "action": "Alex",
-          "result": "Maybe we can reason with the vampire. It's worth a shot before resorting to violence.",
-          "next": "scene_three_16"
-        }
-      ],
-      "epilogue": "Emily's resourcefulness saved the day as they found a wooden stake and successfully fought off the vampire. With the vampire defeated, {char} they continued their exploration of the mansion, now more cautious than ever. {char} They knew there were more mysteries to unravel and dangers to overcome."
-    },
-    "scene_three_2": {
-      "dialogue": "Search the living room for clues.",
-      "question": "What would they find in the living room?",
-      "choices": [
-        {
-          "action": "Alex",
-          "result": "Look, a hidden compartment! Let's see what's inside.",
-          "next": "scene_three_17"
-        },
-        {
-          "action": "Emily",
-          "result": "A rusty key? Maybe it unlocks a door or a secret passage.",
-          "next": "ending_0"
-        },
-        {
-          "action": "Ethan",
-          "result": "This mysterious potion could be useful. Let's keep it with us.",
-          "next": "ending_1"
-        },
-        {
-          "action": "Alex",
-          "result": "And this worn-out diary might contain valuable information. Let's read it carefully.",
-          "next": "ending_2"
-        }
-      ],
-      "epilogue": "Ethan's intuition led them to discover a hidden compartment in the living room. The rusty key they found unlocked a secret passage, revealing a hidden path. With the mysterious potion in their possession, {char} they felt more prepared for the challenges ahead. They ventured into the secret passage, eager to uncover the secrets of the mansion."
-    },
-    "ending_0": "Alex's quick thinking and determination paid off as they managed to escape through the window just in time. The dolls, unable to follow, returned to their lifeless state. The friends regrouped outside, relieved to have evaded the danger lurking in the room. They continued their search for a hidden passage, hoping to find another way out of the mansion. With their hearts pounding and adrenaline still coursing through their veins, they pressed on, determined to unravel the mysteries that awaited them within the mansion's dark corridors. Little did they know that their escape was only the beginning of a treacherous journey filled with more challenges and secrets yet to be discovered.",
-    "ending_1": "Emily's resourcefulness saved the day as they found a wooden stake and successfully fought off the vampire. With the vampire defeated, they continued their exploration of the mansion, now more cautious than ever. Every creak of the floorboards and flicker of the candlelight sent shivers down their spines, reminding them of the dangers that lurked in the shadows. Undeterred, they pressed on, their determination unyielding. They knew that the mansion held more secrets and obstacles, but with their newfound courage, they were ready to face whatever lay ahead. Armed with their wits and the strength of their friendship, they ventured deeper into the darkness, prepared to conquer any challenge that crossed their path.", 
-    "ending_2": "Ethan's intuition led them to discover a hidden compartment in the living room. The rusty key they found unlocked a secret passage, revealing a hidden path. With the mysterious potion in their possession, they felt more prepared for the challenges ahead. The air grew heavy with anticipation as they stepped into the secret passage, their curiosity driving them forward. The flickering torches along the walls illuminated the way, casting eerie shadows that danced and swayed. As they ventured deeper into the unknown, their senses heightened, aware of the mysteries that awaited them. With each step, they grew closer to uncovering the secrets of the mansion, their hearts filled with a mix of trepidation and excitement." 
+  "details": {
+    "name": "haunted-mansion",
+    "about": "lorem ipsum dolor sit amet",
+    "image": "https://answers.flexsim.com/themes/base/admin/img/default-coverImage.png",
+    "alt": "this is the alt"
+  },
+  "scene_one": {
+    "dialogue": "Standing in front of a mysterious and eerie mansion on a dark Halloween night, {char} a group of friends contemplate their options. The wind howls and the trees sway ominously, {char} adding to the eerie atmosphere.",
+    "question": "There are three friends, {char}, which do you choose?",
+    "choices": [
+      {
+        "action": "Feel uneasy about the mansion and question going in.",
+        "result": "Guys, this mansion gives me the creeps. Are you sure we should go in?",
+        "next": "scene_two_0"
+      },
+      {
+        "action": "Show excitement and encourage entering the mansion.",
+        "result": "Come on, it's Halloween! What's the worst that could happen?",
+        "next": "scene_two_1"
+      },
+      {
+        "action": "Express fear and hesitation about the situation.",
+        "result": "I don't know, but I have a bad feeling about this.",
+        "next": "scene_two_2"
+      }
+    ],
+    "epilogue": "Alex's uneasiness proved justified as the group entered the mansion cautiously. {char} The door slammed shut behind them, sealing their fate. Now, in the dimly lit hallway with three doors, {char} they must face the horrors that lie ahead."
+  },
+  "scene_two_0": {
+    "dialogue": "As the group cautiously enters the mansion, the door slams shut behind them, trapping them inside. They find themselves in a dimly lit hallway with three doors.",
+    "question": "Which way should we go?",
+    "choices": [
+      {
+        "action": "Emily decides to go upstairs and explore the bedrooms.",
+        "result": "Let's split up and search for clues. I'll go upstairs and explore the bedrooms.",
+        "next": "scene_three_0"
+      },
+      {
+        "action": "Ethan suggests investigating the creepy basement.",
+        "result": "I'll investigate the creepy basement. Maybe we'll find something useful there.",
+        "next": "scene_three_0"
+      },
+      {
+        "action": "Alex proposes searching the living room.",
+        "result": "I'll search the living room. Hopefully, we'll find a way out.",
+        "next": "scene_three_0"
+      }
+    ],
+    "epilogue": "Alex's nervousness proved justified as the group entered the mansion cautiously. {char} The door slammed shut behind them, sealing their fate. Now, in the dimly lit hallway with three doors, {char} they must face the horrors that lie ahead."
+  },
+  "scene_two_1": {
+    "dialogue": "As the friends sprint away from the mansion, they turn around and see a ghostly figure chasing them. Panic sets in, and they quickly consider their options.",
+    "question": "What should we do?",
+    "choices": [
+      {
+        "action": "Alex",
+        "result": "Quick, let's hide in the nearby graveyard!",
+        "next": "scene_three_3"
+      },
+      {
+        "action": "Emily",
+        "result": "No, that's too obvious. Let's seek refuge in that nearby abandoned cabin.",
+        "next": "scene_three_4"
+      },
+      {
+        "action": "Ethan",
+        "result": "No time to waste! Let's try to outrun the ghost and find a safe place.",
+        "next": "scene_three_5"
+      }
+    ],
+    "epilogue": "Emily's boldness emboldened the group as they sprinted away from the mansion. {char} However, a ghostly figure pursued them relentlessly, turning their Halloween night into a heart-pounding race for survival. {char}"
+  },
+  "scene_two_2": {
+    "dialogue": "To their surprise, the door creaks open slowly, revealing a dimly lit hallway with three doors.",
+    "question": "Which room should we enter first?",
+    "choices": [
+      {
+        "action": "Emily",
+        "result": "Let's go left. It's always good to start from the left, right?",
+        "next": "scene_three_6"
+      },
+      {
+        "action": "Ethan",
+        "result": "No, I have a feeling we should explore the room on the right.",
+        "next": "scene_three_7"
+      },
+      {
+        "action": "Alex",
+        "result": "Or maybe we should just proceed straight ahead to the end of the hallway.",
+        "next": "scene_three_8"
+      }
+    ],
+    "epilogue": "Ethan's intuition guided the group as they cautiously entered the mansion. {char} The door creaked open, revealing a dimly lit hallway with three doors. Little did they know, their choices would determine their fate. {char}{char}"
+  },
+  "scene_three_0": {
+    "dialogue": "As they make their way into the bedroom",
+    "question": "What are they to expect?",
+    "choices": [
+      {
+        "action": "Alex",
+        "result": "This is not good! We need to get out of here!",
+        "next": "scene_three_9"
+      },
+      {
+        "action": "Emily",
+        "result": "Quick, let's escape through the window before those dolls reach us!",
+        "next": "scene_three_10"
+      },
+      {
+        "action": "Ethan",
+        "result": "Wait, maybe we can try to calm the dolls down. They might not be as dangerous as they seem.",
+        "next": "scene_three_11"
+      },
+      {
+        "action": "Emily",
+        "result": "No time for that! Let's search for a hidden passage. There must be another way out!",
+        "next": "scene_three_12"
+      }
+    ],
+    "epilogue": "Emily's quick thinking and determination paid off as they managed to escape through the window just in time. The dolls, unable to follow, returned to their lifeless state. The friends regrouped outside, relieved to have evaded the danger lurking in the room. {char} They continued their search for a hidden passage, hoping to find another way out of the mansion. {char}"
+  },
+  "scene_three_1": {
+    "dialogue": "Investigate the creepy basement.",
+    "question": "What should they expect in a dark and damp basement?",
+    "choices": [
+      {
+        "action": "Alex",
+        "result": "Oh no, a vampire! We need to act fast!",
+        "next": "scene_three_13"
+      },
+      {
+        "action": "Emily",
+        "result": "I'll try to find a wooden stake. It's our best chance to fight the vampire off!",
+        "next": "scene_three_14"
+      },
+      {
+        "action": "Ethan",
+        "result": "Wait, let's look for an escape route. We can't take on a vampire!",
+        "next": "scene_three_15"
+      },
+      {
+        "action": "Alex",
+        "result": "Maybe we can reason with the vampire. It's worth a shot before resorting to violence.",
+        "next": "scene_three_16"
+      }
+    ],
+    "epilogue": "Emily's resourcefulness saved the day as they found a wooden stake and successfully fought off the vampire. With the vampire defeated, {char} they continued their exploration of the mansion, now more cautious than ever. {char} They knew there were more mysteries to unravel and dangers to overcome."
+  },
+  "scene_three_2": {
+    "dialogue": "Search the living room for clues.",
+    "question": "What would they find in the living room?",
+    "choices": [
+      {
+        "action": "Alex",
+        "result": "Look, a hidden compartment! Let's see what's inside.",
+        "next": "scene_three_17"
+      },
+      {
+        "action": "Emily",
+        "result": "A rusty key? Maybe it unlocks a door or a secret passage.",
+        "next": "ending_0"
+      },
+      {
+        "action": "Ethan",
+        "result": "This mysterious potion could be useful. Let's keep it with us.",
+        "next": "ending_1"
+      },
+      {
+        "action": "Alex",
+        "result": "And this worn-out diary might contain valuable information. Let's read it carefully.",
+        "next": "ending_2"
+      }
+    ],
+    "epilogue": "Ethan's intuition led them to discover a hidden compartment in the living room. The rusty key they found unlocked a secret passage, revealing a hidden path. With the mysterious potion in their possession, {char} they felt more prepared for the challenges ahead. They ventured into the secret passage, eager to uncover the secrets of the mansion."
+  },
+  "ending_0": "Alex's quick thinking and determination paid off as they managed to escape through the window just in time. The dolls, unable to follow, returned to their lifeless state. The friends regrouped outside, relieved to have evaded the danger lurking in the room. They continued their search for a hidden passage, hoping to find another way out of the mansion. With their hearts pounding and adrenaline still coursing through their veins, they pressed on, determined to unravel the mysteries that awaited them within the mansion's dark corridors. Little did they know that their escape was only the beginning of a treacherous journey filled with more challenges and secrets yet to be discovered.",
+  "ending_1": "Emily's resourcefulness saved the day as they found a wooden stake and successfully fought off the vampire. With the vampire defeated, they continued their exploration of the mansion, now more cautious than ever. Every creak of the floorboards and flicker of the candlelight sent shivers down their spines, reminding them of the dangers that lurked in the shadows. Undeterred, they pressed on, their determination unyielding. They knew that the mansion held more secrets and obstacles, but with their newfound courage, they were ready to face whatever lay ahead. Armed with their wits and the strength of their friendship, they ventured deeper into the darkness, prepared to conquer any challenge that crossed their path.",
+  "ending_2": "Ethan's intuition led them to discover a hidden compartment in the living room. The rusty key they found unlocked a secret passage, revealing a hidden path. With the mysterious potion in their possession, they felt more prepared for the challenges ahead. The air grew heavy with anticipation as they stepped into the secret passage, their curiosity driving them forward. The flickering torches along the walls illuminated the way, casting eerie shadows that danced and swayed. As they ventured deeper into the unknown, their senses heightened, aware of the mysteries that awaited them. With each step, they grew closer to uncovering the secrets of the mansion, their hearts filled with a mix of trepidation and excitement."
 }

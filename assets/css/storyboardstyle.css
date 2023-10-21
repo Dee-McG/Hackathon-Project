@@ -1,3 +1,7 @@
+:root {
+    --title-font: 'Creepster', cursive;
+  }
+
 .dialogue {
     text-align: center;
     width: 90%;
@@ -7,7 +11,7 @@
     padding:50px;
     border: 1px solid black;
     font-size: 20px;
-    font-family: 'Creepster', cursive;
+    font-family: var(--title-font, cursive);
     border-radius: 20px;
     display: flex;
     margin:20px;

@@ -16,6 +16,12 @@ p {
     color: #eee;
 }
 
+main {
+    max-width: 1480px;
+    text-align: center;
+    margin: 0 auto;
+}
+
 .button {
     background-color: #ff5722;
     border: none;

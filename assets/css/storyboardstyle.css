@@ -18,6 +18,7 @@ body {
   font-family: var(--title-font, cursive);
   border-radius: 20px;
   display: flex;
+  flex-direction: column;
   margin: 20px;
   background-color: rgb(25, 25, 112);
   color: white;

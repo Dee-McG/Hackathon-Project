@@ -1,13 +1,23 @@
 let startBtn = document.getElementById("start-btn");
-
-let currentStory;
+let startSection = document.getElementById("start-section");
+let storySelection = document.getElementById("story-selection-section");
+// Add all stories here
+const storyFiles = [
+    "desert-island",
+    "haunted-forest",
+    "haunted-hotel",
+    "haunted-mansion",
+    "pirate-ship",
+  ];
+const cardWrapper = document.getElementById("card-wrapper");
+let selectedStory = null; // Global variable for the selected story
 
 /**
  * Hide start screen and display story selection screen
  */
 const loadStorySelection = () => {
-    document.getElementById("start-section").style.display = "none";
-    document.getElementById("story-selection-section").style.display = "block";
+    startSection.style.display = "none";
+    storySelection.style.display = "block";
 }
 
 startBtn.addEventListener("click", loadStorySelection);
@@ -28,7 +38,7 @@ const loadStoryFromJson = async (story) => {
  * @param {Object} story - The story object loaded from the JSON.
  */
 const loadDialogue = (story, scene) => {
-    currentStory = story;
+    selectedStory = story;
     const dialogue = story[scene]?.dialogue;
     const storyboard = document.querySelector("#storyboard"); // update this once story board is created
     if (dialogue) {
@@ -75,21 +85,3 @@ const loadEpilogue = (scene) => {
     // TODO - Call next scene function
 }
 
-/**
- * Handles the user's choice and loads the next scene accordingly.
- * @param {number} choiceIndex - Index of the choice clicked by the user.
- */
-const handleChoice = (choiceIndex) => {
-    const currentScene = currentStory[currentSceneKey];
-    const nextSceneKey = currentScene.choices[choiceIndex].nextScene;
-    if (nextSceneKey) {
-        loadDialogue(currentStory, nextSceneKey);
-    } else {
-        // This is the last scene. I am not sure what to add here
-        console.log('End of story.');
-    }
-}
-
-
-// Test it works
-loadStoryFromJson("desert-island");

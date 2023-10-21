@@ -1,9 +1,9 @@
 {
   "details": {
     "name": "pirate-ship",
-    "about": "lorem ipsum dolor sit amet",
-    "image": "https://answers.flexsim.com/themes/base/admin/img/default-coverImage.png",
-    "alt": "this is the alt"
+    "about": "You need to make a journey with haste but the only mode of transport is to get on one of three pirate ships! You can find a safe path across the ocean?",
+    "image": "https://res.cloudinary.com/dwpge0teb/image/upload/v1697888565/pirate-ship_mxxdd4.jpg",
+    "alt": "A pirate ship on harsh water"
   },
   "scene_one": {
     "dialogue": "As the golden sun dipped below the horizon, casting a fiery hue across the bustling harbor, {char} stood at the water's edge, their heart torn between the allure of the sea and the dread of the unknown. The tranquil waters sparkled with the last remnants of daylight, beckoning him towards the waiting vessels. But as {char} approached, a chilling realization set in... the only options before there were ominous pirate ships, their tattered black flags billowing in the evening breeze. The decision loomed large, and with each creaking plank and ominous shadow, there was no good choice here.",

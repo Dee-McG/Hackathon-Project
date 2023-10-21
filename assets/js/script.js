@@ -68,6 +68,7 @@ const loadChoices = (scene) => {
 
     choices.forEach((choice, index) => {
         choice.innerText = scene.choices[index].action;
+        choice.onclick = () => handleChoice(index);
     });
 
     loadEpilogue(scene);
@@ -84,6 +85,24 @@ const loadEpilogue = (scene) => {
     // TODO - Call next scene function
 }
 
+/**
+ * Handles the user's choice and loads the next scene accordingly.
+ * @param {number} choiceIndex - Index of the choice clicked by the user.
+ */
+const handleChoice = (choiceIndex) => {
+    const currentScene = currentStory[currentSceneKey];
+    const nextSceneKey = currentScene.choices[choiceIndex].nextScene;
+    if (nextSceneKey) {
+        loadDialogue(currentStory, nextSceneKey);
+    } else {
+        // This is the last scene. I am not sure what to add here
+        console.log('End of story.');
+    }
+}
+
+
+// Test it works
+loadStoryFromJson("desert-island");
 
 /**
  * Fetch JSON data for the specified story.
@@ -177,4 +196,3 @@ const fetchStoryData = async (story) => {
         storySelection.style.display = "none";
     }
   });
-

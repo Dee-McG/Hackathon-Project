@@ -1,9 +1,9 @@
 {
   "details": {
     "name": "haunted-hotel",
-    "about": "lorem ipsum dolor sit amet",
-    "image": "https://answers.flexsim.com/themes/base/admin/img/default-coverImage.png",
-    "alt": "this is the alt"
+    "about": "Embark on a heart-pounding adventure in the 'Haunted Hotel' – a spine-tingling tale of mysterious occurrences, eerie phone calls, and inexplicable forces lurking in the shadows. With each choice, you'll shape the destiny of the protagonist, and uncover the chilling secrets that blur the lines between dreams and reality",
+    "image": "../../assets/images/haunted-hotel-cover.png",
+    "alt": "A eerie room with a newspaper detailing the hotel's mysteries"
   },
   "scene_one": {
       "dialogue": "After a long, exhausting day, {char} finally settled into their hotel room. The soft lamplight cast a warm, inviting glow over the cozy space, promising a well-deserved rest. As the night deepened, a peaceful sleep embraced them. But suddenly, in the early hours, a loud, unexpected bang jolted {char} awake. Their heart raced as they groped for the lamp switch, flooding the room with a soft, eerie light. They cautiously stepped onto the cool floor, each footfall echoing through the silence. The door loomed ahead, its shadowy outline making them wonder what awaited them on the other side.",

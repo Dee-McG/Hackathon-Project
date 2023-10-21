@@ -1,75 +1,165 @@
 {
-    "scene_one": {
-        "dialogue": "As the golden sun dipped below the horizon, casting a fiery hue across the bustling harbor, {char} stood at the water's edge, their heart torn between the allure of the sea and the dread of the unknown. The tranquil waters sparkled with the last remnants of daylight, beckoning him towards the waiting vessels. But as {char} approached, a chilling realization set in... the only options before there were ominous pirate ships, their tattered black flags billowing in the evening breeze. The decision loomed large, and with each creaking plank and ominous shadow, there was no good choice here.",
-        "question": "There are three ships, {char}, which do you choose?",
-        "choices": [
-            {"action": "The Shadowed Avenger.", "result": "A formidable pirate warship, with massive cannons and a crew swarming like ants, dominates the seascape, a floating fortress of impending doom", "next": "scene_two_0"},
-            {"action": "The Scurvy Scallywag.", "result": "A compact but solid vessel, swift and cunning, darts like a shadow across the waves, ready to strike with surprising ferocity.", "next": "scene_two_1"},
-            {"action": "The Wicked Siren", "result": "A mid-sized pirate ship, its deck alive with drunken revelry, sways to the rhythm of raucous shanties on the high seas","next": "scene_two_2"}
-        ],
-        "epilogue": "Suddenly a bone-chilling, soul-shattering terror rocked {char} down to their very core."
-    },
-    "scene_two_0": {
-        "dialogue": "Amidst the chaos of a menacing pirate warship, with cannons bellowing and sails billowing ominously, an eerie hush fell over the deck as Captain Jack Sparrow materialized from the shadows. In his gnarled hand, he brandished not a sword, but a rotten cucumber, its fetid stench assaulting the senses. With a sinister grin, he flung the decaying vegetable directly at {char}, who watched in horror as the soggy projectile hurtled toward them. As the cucumber splattered upon impact, the crew erupted into uneasy laughter, but the malicious glee in Captain Sparrow's eyes sent a shiver down their spine, for in his unpredictable whimsy lay the true terror of this enigmatic pirate captain.",
-        "question": "{char} chooses to ",
-        "choices": [
-            {"action": "Attempt to fight Jack", "result": "{char}, consumed by anger, lunged at Jack Sparrow with a vengeful fury, determined to settle the score once and for all.", "next": "scene_three_0"},
-            {"action": "Laugh with the crew", "result": "In the face of impending danger, {char} found themselves laughing at their own misfortune, a nervous, trembling chuckle that betrayed the knot of fear in their gut. {char} ran for a lifeboat while no one was looking and began to lower themselves into the water.", "next": "scene_three_1"},
-            {"action": "Hurl rotten tomato at Jack", "result": "With a mixture of defiance and disgust, {char} hurled a rotten tomato at Captain Jack Sparrow, the putrid projectile splattering against his cocky grin.", "next": "scene_three_0"}
-        ],
-        "epilogue": "Unsure of their choice, {char} knew there was no turning back now."
-    },
-    "scene_two_1": {
-        "dialogue": "As the sun dipped below the horizon, casting a fiery glow across the tranquil waters, The Scurvy Scallywag, set sail with an air of eerie anticipation. Its tattered sails billowed in the dying light, and the crew, a motley band of rogues, seemed to dissolve into the encroaching darkness one by one, their spectral silhouettes fading as the ship glided further into the mysterious depths of the boundless sea, leaving only the unsettling whisper of their sinister laughter behind.",
-        "question": "{char} decides to ",
-        "choices": [
-            {"action": "Attempt to sail the ship", "result": "Overwhelmed by the complexities of the pirate ship, {char} found themself utterly incapable of navigating the treacherous waters, their confidence drowned by the sheer magnitude of the task", "next": "scene_three_2"},
-            {"action": "Board the life boat", "result": "Stranded on the empty ship, {char} faced the daunting descent onto the lifeboat, equipped with neither oars nor hope, their fate hanging by a thread.", "next": "scene_three_1"},
-            {"action": "Swim to safety", "result": "Amid the sudden silence of the pirate ship, {char} made a bold leap into the open sea, determined to embrace the uncertain depths and swim toward an elusive freedom.", "next": "scene_three_1"}
-        ],
-        "epilogue": "Dark clouds gathered on the horizon, the once-calm sea transformed into a raging tempest, its waves rising like vengeful giants hungry for the vessels that dared to defy them."
-    },
-    "scene_two_2": {
-        "dialogue": "In the pale moonlight, a ghostly siren's haunting song echoed as it carried across the salt tinged breeze, a mournful melody that beckoned lost souls to the depths of the briny abyss.",
-        "question": "Curios about the sound, {char}",
-        "choices": [
-            {"action": "Take the lifeboat to get closer", "result": "{char} could not resist the sirens song, the temptation was too great. Attempts to board the life board were thwarted by the ships captain who tried to stop them. {char} retaliated with full force.", "next": "scene_three_0"},
-            {"action": "Climb the mast to see better", "result": "{char} climbed the mast of the ship, searching around in all directions trying to see the source of the mesmorizing songs but with a harsh wave, lost their grip and fell into the ocean", "next": "scene_three_1"},
-            {"action": "Swim as the sound is close", "result": "{char} jumped over the edge, swimming with every piece of energy they had, they could not resist the tempation of the mezmerizing song", "next": "scene_three_2"}
-        ],
-        "epilogue": "That sound, it could not be resisted, no one could resist."
-    },
-    "scene_three_0": {
-        "dialogue": "{char}'s vengeful assault came to an abrupt halt as a mournful, otherworldly wail pierced the heavens, causing them to look up in dread at the ethereal, haunting sound that seemed to portend an even darker twist to this confrontation. The laughter quickly turned to dread, unmistakable fear spread across the faces of all crew members and they began to run.",
-        "question": "Upon seeing the fearless crew swiftly turn to terrified mess, {char} decides to",
-        "choices": [
-            {"action": "Stand strong", "result": "{char} stands there ground, refusing to let some spirit, ghost or evil entity scare them. After all, what can a non physical form do to a living human?", "next": "ending_0"},
-            {"action": "Jump Ship", "result": "{char} decides to run with the rest of the crew, suddenly, one by one the crew jump overboard, abandoning the ship. Something was approaching {char} in the water, at super speed.", "next": "ending_1"},
-            {"action": "Run and Hide", "result": "{char} decides to run and hide, jumping from the ship into a small lifeboat but trips and falls over the edge", "next": "ending_1"}
-        ],
-        "epilogue": "Neither choice felt like a good one but {char} was unwaivering in their decision, beliving the right choice had been made."
-    },
-    "scene_three_1": {
-        "dialogue": "A zombie shark appeared out of no where, a terrifying, otherworldly creature with blood red eyes and a ghostly glow, swimming rapidly towards {char}, there were not many options left",
-        "question": "{char} attempts to",
-        "choices": [
-            {"action": "Climb back on the boat", "result": "With desperation in their eyes, {char} clung to the ship's side, attempting to haul themselves back aboard as the relentless waves threatened to send them toward the beast.", "next": "ending_0"},
-            {"action": "Shoot a flare at the beast", "result": "Having found a flare gun on the ship before departing, {char} takes aim towards the zombie shark and fires directly at it", "next": "ending_1"},
-            {"action": "Swim in the opposite direction", "result": "Thinking quickly, {char} decides to swim in the opposite direction, looking back the zombie shark turned back and a sirens song could be heard loudly", "next": "ending_2"}
-        ],
-        "epilogue": "Amidst the chorus of doubt and uncertainty, {char} remained resolute, unwavering in their decision, like a lighthouse in a stormy sea"
-    },
-    "scene_three_2": {
-        "dialogue": "With an alluring facade that concealed her malevolent intentions, the evil siren's enchanting song lured {char} towards their doom, trying to capture their soul in her treacherous web of deceit.",
-        "question": "Breaking from the spell, {char} decides to",
-        "choices": [
-            {"action": "Swim back to the ship", "result": "{char} made the decision to swim back to the ship, praying that by some divine miracle, the siren would not give chase and climbed back on board the ship", "next": "ending_0"},
-            {"action": "Give up, it's pointless", "result": "{char} was losing hope, the ship seemed so far away and danger lurked in every direction. Feeling hopeless, they gave up. What was the point?", "next": "ending_2"},
-            {"action": "Swim in the opposite direction", "result": "Thinking quickly, {char} decides to swim in the opposite direction, now facing a new danger that could be seen rapidly approaching", "next": "ending_1"}
-        ],
-        "epilogue": "The water was cold, the waves were fierce, {char}'s body hurt with all it's being"
-    },
-    "ending_0": "An ominous, malevolent presence stood in the center on the deck, a form of a lady but with a penetrating gaze and twisted smile, as it whispered ancient curses. Suddenly everything went black and {char} awoke upon a shore of an unknown land.",
-    "ending_1": "The fear that washed over {char} at the sight of the zombie shark was a primal, bone-deep terror, two meters... one meter... Darkness. {char} let out a huge cough, water erupted from their windpipe, opening their eyes, somehow they had found their way onto a trade ship, somehow, unharmed.",
-    "ending_2": "By some miracle, a friendly siren, her compassionate eyes gleaming, rushed to rescue {char} from the clutches of the malevolent temptress, guiding them safely away from the treacherous depths."
+  "details": {
+    "name": "pirate-ship",
+    "about": "lorem ipsum dolor sit amet",
+    "image": "https://answers.flexsim.com/themes/base/admin/img/default-coverImage.png",
+    "alt": "this is the alt"
+  },
+  "scene_one": {
+    "dialogue": "As the golden sun dipped below the horizon, casting a fiery hue across the bustling harbor, {char} stood at the water's edge, their heart torn between the allure of the sea and the dread of the unknown. The tranquil waters sparkled with the last remnants of daylight, beckoning him towards the waiting vessels. But as {char} approached, a chilling realization set in... the only options before there were ominous pirate ships, their tattered black flags billowing in the evening breeze. The decision loomed large, and with each creaking plank and ominous shadow, there was no good choice here.",
+    "question": "There are three ships, {char}, which do you choose?",
+    "choices": [
+      {
+        "action": "The Shadowed Avenger.",
+        "result": "A formidable pirate warship, with massive cannons and a crew swarming like ants, dominates the seascape, a floating fortress of impending doom",
+        "next": "scene_two_0"
+      },
+      {
+        "action": "The Scurvy Scallywag.",
+        "result": "A compact but solid vessel, swift and cunning, darts like a shadow across the waves, ready to strike with surprising ferocity.",
+        "next": "scene_two_1"
+      },
+      {
+        "action": "The Wicked Siren",
+        "result": "A mid-sized pirate ship, its deck alive with drunken revelry, sways to the rhythm of raucous shanties on the high seas",
+        "next": "scene_two_2"
+      }
+    ],
+    "epilogue": "Suddenly a bone-chilling, soul-shattering terror rocked {char} down to their very core."
+  },
+  "scene_two_0": {
+    "dialogue": "Amidst the chaos of a menacing pirate warship, with cannons bellowing and sails billowing ominously, an eerie hush fell over the deck as Captain Jack Sparrow materialized from the shadows. In his gnarled hand, he brandished not a sword, but a rotten cucumber, its fetid stench assaulting the senses. With a sinister grin, he flung the decaying vegetable directly at {char}, who watched in horror as the soggy projectile hurtled toward them. As the cucumber splattered upon impact, the crew erupted into uneasy laughter, but the malicious glee in Captain Sparrow's eyes sent a shiver down their spine, for in his unpredictable whimsy lay the true terror of this enigmatic pirate captain.",
+    "question": "{char} chooses to ",
+    "choices": [
+      {
+        "action": "Attempt to fight Jack",
+        "result": "{char}, consumed by anger, lunged at Jack Sparrow with a vengeful fury, determined to settle the score once and for all.",
+        "next": "scene_three_0"
+      },
+      {
+        "action": "Laugh with the crew",
+        "result": "In the face of impending danger, {char} found themselves laughing at their own misfortune, a nervous, trembling chuckle that betrayed the knot of fear in their gut. {char} ran for a lifeboat while no one was looking and began to lower themselves into the water.",
+        "next": "scene_three_1"
+      },
+      {
+        "action": "Hurl rotten tomato at Jack",
+        "result": "With a mixture of defiance and disgust, {char} hurled a rotten tomato at Captain Jack Sparrow, the putrid projectile splattering against his cocky grin.",
+        "next": "scene_three_0"
+      }
+    ],
+    "epilogue": "Unsure of their choice, {char} knew there was no turning back now."
+  },
+  "scene_two_1": {
+    "dialogue": "As the sun dipped below the horizon, casting a fiery glow across the tranquil waters, The Scurvy Scallywag, set sail with an air of eerie anticipation. Its tattered sails billowed in the dying light, and the crew, a motley band of rogues, seemed to dissolve into the encroaching darkness one by one, their spectral silhouettes fading as the ship glided further into the mysterious depths of the boundless sea, leaving only the unsettling whisper of their sinister laughter behind.",
+    "question": "{char} decides to ",
+    "choices": [
+      {
+        "action": "Attempt to sail the ship",
+        "result": "Overwhelmed by the complexities of the pirate ship, {char} found themself utterly incapable of navigating the treacherous waters, their confidence drowned by the sheer magnitude of the task",
+        "next": "scene_three_2"
+      },
+      {
+        "action": "Board the life boat",
+        "result": "Stranded on the empty ship, {char} faced the daunting descent onto the lifeboat, equipped with neither oars nor hope, their fate hanging by a thread.",
+        "next": "scene_three_1"
+      },
+      {
+        "action": "Swim to safety",
+        "result": "Amid the sudden silence of the pirate ship, {char} made a bold leap into the open sea, determined to embrace the uncertain depths and swim toward an elusive freedom.",
+        "next": "scene_three_1"
+      }
+    ],
+    "epilogue": "Dark clouds gathered on the horizon, the once-calm sea transformed into a raging tempest, its waves rising like vengeful giants hungry for the vessels that dared to defy them."
+  },
+  "scene_two_2": {
+    "dialogue": "In the pale moonlight, a ghostly siren's haunting song echoed as it carried across the salt tinged breeze, a mournful melody that beckoned lost souls to the depths of the briny abyss.",
+    "question": "Curios about the sound, {char}",
+    "choices": [
+      {
+        "action": "Take the lifeboat to get closer",
+        "result": "{char} could not resist the sirens song, the temptation was too great. Attempts to board the life board were thwarted by the ships captain who tried to stop them. {char} retaliated with full force.",
+        "next": "scene_three_0"
+      },
+      {
+        "action": "Climb the mast to see better",
+        "result": "{char} climbed the mast of the ship, searching around in all directions trying to see the source of the mesmorizing songs but with a harsh wave, lost their grip and fell into the ocean",
+        "next": "scene_three_1"
+      },
+      {
+        "action": "Swim as the sound is close",
+        "result": "{char} jumped over the edge, swimming with every piece of energy they had, they could not resist the tempation of the mezmerizing song",
+        "next": "scene_three_2"
+      }
+    ],
+    "epilogue": "That sound, it could not be resisted, no one could resist."
+  },
+  "scene_three_0": {
+    "dialogue": "{char}'s vengeful assault came to an abrupt halt as a mournful, otherworldly wail pierced the heavens, causing them to look up in dread at the ethereal, haunting sound that seemed to portend an even darker twist to this confrontation. The laughter quickly turned to dread, unmistakable fear spread across the faces of all crew members and they began to run.",
+    "question": "Upon seeing the fearless crew swiftly turn to terrified mess, {char} decides to",
+    "choices": [
+      {
+        "action": "Stand strong",
+        "result": "{char} stands there ground, refusing to let some spirit, ghost or evil entity scare them. After all, what can a non physical form do to a living human?",
+        "next": "ending_0"
+      },
+      {
+        "action": "Jump Ship",
+        "result": "{char} decides to run with the rest of the crew, suddenly, one by one the crew jump overboard, abandoning the ship. Something was approaching {char} in the water, at super speed.",
+        "next": "ending_1"
+      },
+      {
+        "action": "Run and Hide",
+        "result": "{char} decides to run and hide, jumping from the ship into a small lifeboat but trips and falls over the edge",
+        "next": "ending_1"
+      }
+    ],
+    "epilogue": "Neither choice felt like a good one but {char} was unwaivering in their decision, beliving the right choice had been made."
+  },
+  "scene_three_1": {
+    "dialogue": "A zombie shark appeared out of no where, a terrifying, otherworldly creature with blood red eyes and a ghostly glow, swimming rapidly towards {char}, there were not many options left",
+    "question": "{char} attempts to",
+    "choices": [
+      {
+        "action": "Climb back on the boat",
+        "result": "With desperation in their eyes, {char} clung to the ship's side, attempting to haul themselves back aboard as the relentless waves threatened to send them toward the beast.",
+        "next": "ending_0"
+      },
+      {
+        "action": "Shoot a flare at the beast",
+        "result": "Having found a flare gun on the ship before departing, {char} takes aim towards the zombie shark and fires directly at it",
+        "next": "ending_1"
+      },
+      {
+        "action": "Swim in the opposite direction",
+        "result": "Thinking quickly, {char} decides to swim in the opposite direction, looking back the zombie shark turned back and a sirens song could be heard loudly",
+        "next": "ending_2"
+      }
+    ],
+    "epilogue": "Amidst the chorus of doubt and uncertainty, {char} remained resolute, unwavering in their decision, like a lighthouse in a stormy sea"
+  },
+  "scene_three_2": {
+    "dialogue": "With an alluring facade that concealed her malevolent intentions, the evil siren's enchanting song lured {char} towards their doom, trying to capture their soul in her treacherous web of deceit.",
+    "question": "Breaking from the spell, {char} decides to",
+    "choices": [
+      {
+        "action": "Swim back to the ship",
+        "result": "{char} made the decision to swim back to the ship, praying that by some divine miracle, the siren would not give chase and climbed back on board the ship",
+        "next": "ending_0"
+      },
+      {
+        "action": "Give up, it's pointless",
+        "result": "{char} was losing hope, the ship seemed so far away and danger lurked in every direction. Feeling hopeless, they gave up. What was the point?",
+        "next": "ending_2"
+      },
+      {
+        "action": "Swim in the opposite direction",
+        "result": "Thinking quickly, {char} decides to swim in the opposite direction, now facing a new danger that could be seen rapidly approaching",
+        "next": "ending_1"
+      }
+    ],
+    "epilogue": "The water was cold, the waves were fierce, {char}'s body hurt with all it's being"
+  },
+  "ending_0": "An ominous, malevolent presence stood in the center on the deck, a form of a lady but with a penetrating gaze and twisted smile, as it whispered ancient curses. Suddenly everything went black and {char} awoke upon a shore of an unknown land.",
+  "ending_1": "The fear that washed over {char} at the sight of the zombie shark was a primal, bone-deep terror, two meters... one meter... Darkness. {char} let out a huge cough, water erupted from their windpipe, opening their eyes, somehow they had found their way onto a trade ship, somehow, unharmed.",
+  "ending_2": "By some miracle, a friendly siren, her compassionate eyes gleaming, rushed to rescue {char} from the clutches of the malevolent temptress, guiding them safely away from the treacherous depths."
 }

@@ -45,8 +45,12 @@ const createCardElement = (details) => {
   cardImage.src = details.image;
   cardImage.alt = details.alt;
 
+  const originalName = details.name;
+  const formattedName = originalName.replace(/-/g, " "); // Format name without hyphens
+
   const cardTitle = document.createElement("h2");
-  cardTitle.textContent = details.name;
+  cardTitle.textContent = formattedName;
+  cardTitle.setAttribute("data-original-name", originalName); // Used to store original name so we know what story to run
   cardTitle.tabIndex = 0;
 
   const cardDescription = document.createElement("p");
@@ -88,9 +92,9 @@ processStoryData(storyFiles);
 cardWrapper.addEventListener("click", (event) => {
   const clickedElement = event.target.closest(".card");
   if (clickedElement) {
-    // Extract the story name from the clicked card's title
-    const cardTitle = clickedElement.querySelector("h2");
-    const selectedStory = cardTitle.textContent;
-    console.log(selectedStory);
+    const originalName = clickedElement
+      .querySelector("h2")
+      .getAttribute("data-original-name");
+    console.log(originalName);
   }
 });

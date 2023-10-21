@@ -53,6 +53,9 @@ const loadDialogue = (story, scene) => {
   // Load random image for the story
   const sceneImageElement = document.getElementById("scene-image");
   sceneImageElement.src = getRandomSceneImage(story.details.name);
+  // Replace {char} with the playername
+  const replacedDialogue = replaceCharWithCharacterName(dialogue);
+  storyboard.textContent = replacedDialogue;
 };
 
 /**
@@ -64,6 +67,8 @@ const loadQuestion = (scene) => {
   question.style.display = "flex";
   question.innerText = scene.question;
   loadChoices(scene);
+  const replacedQuestionText = replaceCharWithCharacterName(question.innerText);
+  question.innerText = replacedQuestionText;
 }
 
 /**
@@ -242,7 +247,7 @@ const storiesAndImages = {
 
 };
 
-
+//Function to generate image
 function getRandomSceneImage(storyName) {
   if(!storiesAndImages[storyName]) {
       console.error(`No images found for story: ${storyName}`);
@@ -252,4 +257,26 @@ function getRandomSceneImage(storyName) {
   const images = storiesAndImages[storyName].images;
   const randomIndex = Math.floor(Math.random() * images.length);
   return images[randomIndex];
+}
+
+//Store player name in session storage
+document.getElementById("set-character-name-btn").addEventListener("click", function() {
+  const charName = document.getElementById("character-name-input").value;
+
+  if (charName) {
+      sessionStorage.setItem("characterName", charName);
+  } else {
+      alert("Please enter a character name.");
+  }
+});
+
+
+/**
+ * Replaces {char} in a given text with the character name from session storage.
+ * @param {string} text - The text where replacements should be made.
+ * @returns {string} - Text with {char} replaced by character name.
+ */
+function replaceCharWithCharacterName(text) {
+  const charName = sessionStorage.getItem("characterName") || "DefaultName"; 
+  return text.replace(/{char}/g, charName);
 }

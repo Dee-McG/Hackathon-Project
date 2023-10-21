@@ -1,65 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Website Title</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/storyboardstyle.css">
-    <link rel="stylesheet" href="assets/css/storySelectionstyle.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/storyboardstyle.css" />
+    <link rel="stylesheet" href="assets/css/storySelectionstyle.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Creepster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <main>
-        <!-- Start Section -->
-        <section id="start-section">
-            <!-- Content -->
-            <div id="website-info">
-                <h1>Welcome to Our Website!</h1>
-                <p>Intro about our website</p>
-            </div>
+      <!-- Start Section -->
+      <section id="start-section">
+        <!-- Content -->
+        <div id="website-info">
+          
+          <h1>Spooktacular Stories</h1>
+          <p>
+            As the moon casts an eerie glow,
+            you find yourself on the threshold of a spine-tingling adventure
+            that will test your courage and wit. The air is filled with an
+            enchanting sense of anticipation, for Halloween night has arrived,
+            and with it, the promise of mysterious encounters and supernatural
+            wonders. Join us on this interactive Halloween journey, where you'll
+            make choices that will determine your fate in a world where the line
+            between the living and the spectral realms is blurred. From haunted
+            mansions to ancient cemeteries, your choices will shape your destiny
+            in a story where ghouls, ghosts, and otherworldly beings await your
+            decision. So, step into the shadows, and let your Halloween tale
+            begin. Will you trick, or will you treat? The choice is yours.
+          </p>
+        </div>
 
-            <!-- Buttons -->
-            <div id="buttons">
-                <button id="rules-btn">Rules</button>
-                <button id="start-btn">Start</button>
-            </div>
-        </section>
+        <!-- Buttons -->
+        <div id="buttons">
+          <button id="rules-btn">Rules</button>
+          <button id="start-btn">Start</button>
+        </div>
+      </section>
 
-        <!-- Story Selection -->
-        <section id="story-selection-section" class="hidden">
-            <h1 id="story-selection-heading">Select Your Story!</h1>
-            <div id="story-section-wrapper">
-                <div id="card-wrapper">
-                </div>
-            </div>
-        </section>
+      <!-- Story Selection -->
+      <section id="story-selection-section" class="hidden">
+        <h1 id="story-selection-heading">Select Your Story!</h1>
+        <div id="story-section-wrapper">
+          <div id="card-wrapper"></div>
+        </div>
+      </section>
 
-        <!-- Story Board -->
-        <section id="storyboard-section" class="hidden">
-            <div id="storyboard" class="dialogue">
-              <!--dialogue loaded here-->
-            </div>
-      
-            <div id="question">
-              <!--question loaded here-->
-            </div>
-      
-            <!--section for choices-->
-            <div id="choices">
-              <button class="choice" value="0">choice 1</button>&nbsp;&nbsp;&nbsp;
-              <button class="choice" value="1">choice 2</button>&nbsp;&nbsp;&nbsp;
-              <button class="choice" value="2">choice 3</button>
-            </div>
-      
-            <div id="epilogue">
-              <!--epilogue loaded here-->
-            </div>
-          </section>
+      <!-- Story Board -->
+      <section id="storyboard-section" class="hidden">
+        <div id="storyboard" class="dialogue">
+          <!--dialogue loaded here-->
+        </div>
+
+        <div id="question">
+          <!--question loaded here-->
+        </div>
+
+        <!--section for choices-->
+        <div id="choices">
+          <button class="choice" value="0">choice 1</button>&nbsp;&nbsp;&nbsp;
+          <button class="choice" value="1">choice 2</button>&nbsp;&nbsp;&nbsp;
+          <button class="choice" value="2">choice 3</button>
+        </div>
+
+      </section>
     </main>
     <script src="assets/js/script.js"></script>
-</body>
+  </body>
 </html>

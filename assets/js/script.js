@@ -11,6 +11,7 @@ const storyFiles = [
   ];
 const cardWrapper = document.getElementById("card-wrapper");
 let selectedStory = null; // Global variable for the selected story
+let currentSceneKey;
 
 /**
  * Hide start screen and display story selection screen
@@ -38,15 +39,17 @@ const loadStoryFromJson = async (story) => {
  * @param {Object} story - The story object loaded from the JSON.
  */
 const loadDialogue = (story, scene) => {
+    currentSceneKey = scene;
     selectedStory = story;
     const dialogue = story[scene]?.dialogue;
     const storyboard = document.querySelector("#storyboard"); // update this once story board is created
     if (dialogue) {
         storyboard.textContent = dialogue;
+        loadQuestion(story[scene]);
     } else {
+        // Handle end of game screen
         console.error("Dialogue for the current scene not found.");
     }
-    loadQuestion(story[scene]);
 };
 
 /**
@@ -55,6 +58,7 @@ const loadDialogue = (story, scene) => {
  */
 const loadQuestion = (scene) => {
     const question = document.getElementById("question");
+    question.style.display = "flex";
     question.innerText = scene.question;
     loadChoices(scene);
 }
@@ -65,13 +69,11 @@ const loadQuestion = (scene) => {
  */
 const loadChoices = (scene) => {
     const choices = document.querySelectorAll(".choice");
-
+    document.getElementById("choices").style.display = "flex";
     choices.forEach((choice, index) => {
         choice.innerText = scene.choices[index].action;
         choice.onclick = () => handleChoice(index);
     });
-
-    loadEpilogue(scene);
 }
 
 /**
@@ -79,30 +81,31 @@ const loadChoices = (scene) => {
  * @param {object} scene - Current scene from the story
  */
 const loadEpilogue = (scene) => {
-    const epilogue = document.getElementById("epilogue");
+    const storyBoard = document.getElementById("storyboard");
 
-    epilogue.innerText = scene.epilogue;
-    // TODO - Call next scene function
+    storyBoard.innerHTML += `<p>${scene.epilogue}</p>`;
 }
 
 /**
  * Handles the user's choice and loads the next scene accordingly.
  * @param {number} choiceIndex - Index of the choice clicked by the user.
  */
-const handleChoice = (choiceIndex) => {
-    const currentScene = currentStory[currentSceneKey];
-    const nextSceneKey = currentScene.choices[choiceIndex].nextScene;
-    if (nextSceneKey) {
-        loadDialogue(currentStory, nextSceneKey);
-    } else {
-        // This is the last scene. I am not sure what to add here
-        console.log('End of story.');
-    }
+const handleChoice = async (choiceIndex) => {
+    document.getElementById("choices").style.display = "none";
+    document.getElementById("question").style.display = "none";
+    let action = selectedStory[currentSceneKey].choices[choiceIndex].action;
+    let result = selectedStory[currentSceneKey].choices[choiceIndex].result;
+    document.getElementById("storyboard").innerText = `${action}. ${result}`;
+    
+    await new Promise(resolve => setTimeout(resolve, 6000));
+    loadEpilogue(selectedStory[currentSceneKey]);
+    
+    await new Promise(resolve => setTimeout(resolve, 10000));
+
+    const currentScene = selectedStory[currentSceneKey];
+    currentSceneKey = currentScene.choices[choiceIndex].next;
+    loadDialogue(selectedStory, currentSceneKey);
 }
-
-
-// Test it works
-loadStoryFromJson("desert-island");
 
 /**
  * Fetch JSON data for the specified story.

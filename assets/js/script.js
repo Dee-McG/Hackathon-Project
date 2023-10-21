@@ -1,4 +1,16 @@
+let startBtn = document.getElementById("start-btn");
+
 let currentStory;
+
+/**
+ * Hide start screen and display story selection screen
+ */
+const loadStorySelection = () => {
+    document.getElementById("start-section").style.display = "none";
+    document.getElementById("story-selection-section").style.display = "block";
+}
+
+startBtn.addEventListener("click", loadStorySelection);
 
 /**
  * Loads the selected story json file

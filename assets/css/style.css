@@ -9,6 +9,7 @@ body {
 
 h1, h2, h3 {
     color: #ff5722;
+    letter-spacing: 2px;
 }
 
 p {
@@ -37,4 +38,8 @@ p {
 /* Add some spooky icons or background images */
 .spooky-icon {
     background: url('path_to_spooky_icon.png') no-repeat;
+}
+
+.hidden {
+    display: none;
 }

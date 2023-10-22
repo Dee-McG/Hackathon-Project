@@ -6,32 +6,27 @@
     "alt": "A eerie room with a newspaper detailing the hotel's mysteries"
   },
   "scene_one": {
-    "soundOnLoad": "assets/sounds/boo-and-laugh-7060.mp3",
-    "soundOnLoadTimeOut": 2000,
     "dialogue": "After a long, exhausting day, {char} finally settled into their hotel room. The soft lamplight cast a warm, inviting glow over the cozy space, promising a well-deserved rest. As the night deepened, a peaceful sleep embraced them. But suddenly, in the early hours, a loud, unexpected bang jolted {char} awake. Their heart raced as they groped for the lamp switch, flooding the room with a soft, eerie light. They cautiously stepped onto the cool floor, each footfall echoing through the silence. The door loomed ahead, its shadowy outline making them wonder what awaited them on the other side.",
     "question": "What do you do now?",
+    "soundOnLoad": "assets/sounds/door-knock.mp3",
     "choices": [
       {
         "action": "With bated breath, {char} cautiously opens the door,",
         "result": "revealing... an empty, dimly lit corridor",
         "next": "scene_two_0",
-        "hoverSound": "assets/sounds/boo-and-laugh-7060.mp3",
-        "hoverSoundTimeOut": 200
+        "sound": "assets/sounds/breathing.mp3"
       },
       {
         "action": "{char}'s voice quivers as they call out, 'Who's there?'",
         "result": "but there's only silence in response.",
         "next": "scene_two_1",
-        "hoverSound": "assets/sounds/evil-spirit.mp3",
-        "hoverSoundTimeOut": 200
+        "sound": "assets/sounds/breathing.mp3"
       },
       {
         "action": "Nervously, {char} takes slow steps, retreating to the safety of the hotel room's dimly lit interior.",
         "result": "They back away until they reach the base of the bed.",
         "next": "scene_two_2",
-        "sound": "assets/sounds/boo-and-laugh-7060.mp3",
-        "ClickSoundTimeOut": 100
-        
+        "sound": "assets/sounds/breathing.mp3"
       }
     ],
     "epilogue": "Suddenly, all of the lights go out, plunging {char} into darkness with only the dim moonlight shining through"
@@ -39,6 +34,8 @@
   "scene_two_0": {
     "dialogue": "An eerie feeling washed over {char} as they stood before the empty corridor. Frozen in fear, they could barely breathe as an invisible force seemed to pull them backward into the room. The door slammed shut with a deafening thud.",
     "question": "{char} chooses to",
+    "soundOnLoad": "assets/sounds/door-slam.mp3",
+    "soundOnLoadTimeOut": 4000,
     "choices": [
       {
         "action": "Try to grab the hand pulling you to fend it off",
@@ -48,7 +45,8 @@
       {
         "action": "Screams out for help",
         "result": "Desperation fills the air as {char} screams for assistance, but the force pulling them only accelerates.",
-        "next": "scene_three_0"
+        "next": "scene_three_0",
+        "sound": "assets/sounds/girl-scream.mp3"
       },
       {
         "action": "Trying to grab a funiture to stop being pulled",
@@ -61,6 +59,7 @@
   "scene_two_1": {
     "dialogue": "A sudden chill runs down {char}'s spine as the mysterious events continue to unfold. In the silence of the dimly lit corridor, {char}'s phone abruptly begins to ring. They walk over to it, their heart pounding in their chest, and see that it's an unknown number calling.",
     "question": "What does {char} do?",
+    "soundOnLoad": "assets/sounds/phone-ring.mp3",
     "choices": [
       {
         "action": "{char} answers the phone",
@@ -81,8 +80,9 @@
     "epilogue": "Just as {char} contemplates their next move, a piercing scream echoes from the room next door, sending shivers down their spine and raising the stakes of this mysterious night."
   },
   "scene_two_2": {
-    "dialogue": "Fear grips {char} as they ponder who could be knocking at their door at this unearthly hour. Suddenly, a deafening crash shatters the silence as the window shoots open, unleashing a gust of wind that sends the curtains dancing. In the dim light, {char} notices wet footprints slowly creeping toward them.",
+    "dialogue": "Fear grips {char} as they ponder who could be knocking at their door at this unearthly hour. Suddenly, a deafening crash shatters the silence as the window shoots open, unleashing a gust of wind that sends the curtains dancing and the sound of the rain pouring deafens the room. In the dim light, {char} notices wet footprints slowly creeping toward them.",
     "question": "What does {char} do?",
+    "soundOnLoad": "assets/sounds/rain-thunder.mp3",
     "choices": [
       {
         "action": "Dives onto the bed",
@@ -105,6 +105,7 @@
   "scene_three_0": {
     "dialogue": "After a few agonizing seconds of being suspended in the air, {char}'s legs suddenly flip horizontally, and they crash into the ceiling, their gaze now fixed straight down at the floor. Paralyzed and unable to move, {char} strains to hear the unsettling sound of footsteps creeping ever closer. With immense effort, {char} finally breaks free from their strange predicament, plummeting to the ground with an almighty crash.",
     "question": "What does {char} do next?",
+    "soundOnLoad": "assets/sounds/person-knocked-down.mp3",
     "choices": [
       {
         "action": "Run to the hotel room door",
@@ -127,11 +128,13 @@
   "scene_three_1": {
     "dialogue": "After the harrowing scream from the room next door, {char} springs into action. They rush to their hotel room balcony and bravely climb across to the adjacent room from which the cry emanated. Peering through the window, {char} witnesses a horrifying sight—a woman pinned against the wall by a colossal, beastly figure, more animal than man.",
     "question": "What does {char} do?",
+    "soundOnLoad": "assets/sounds/girl-scream.mp3",
     "choices": [
       {
         "action": "Smash through the window to save the woman",
-        "results": "Fueled by adrenaline, {char} shatters the window and charges toward the menacing figure, prepared to tackle it to the ground. But as they approach, the beastly man swiftly turns and seizes {char} by the throat, rendering them helpless and unable to break free.",
-        "next": "ending_0"
+        "results": "Fueled by adrenaline, {char} shatters the window and charges toward the menacing figure, prepared to tackle it to the ground. But as they approach, the beastly man it unleashes a loud roar and swiftly turns and seizes {char} by the throat, rendering them helpless and unable to break free.",
+        "next": "ending_0",
+        "sound": "assets/sounds/beast-roar.mp3"
       },
       {
         "action": "Jump back to  your hotel room balcony",
@@ -149,21 +152,25 @@
   "scene_three_2": {
     "dialogue": "After what felt like mere seconds, but in reality was much longer, {char} regains consciousness. In a state of shock, they jolt upright and sprint toward the hotel room door, wrenching it open and bolting into the corridor, desperate for help. Frantically searching their pockets, {char} retrieves their phone.",
     "question": "What does {char} do?",
+    "soundOnLoad": "assets/sounds/running.mp3",
     "choices": [
       {
         "action": "Ring there friends and tell them what happened.",
         "results": "With trembling hands, {char} dials their friend's number and tries to explain what transpired. However, their friend's voice on the other end reveals an unsettling revelation—they were knocking at {char}'s door last night because they couldn't enter their own room.",
-        "next": "ending_2"
+        "next": "ending_2",
+        "sound": "assets/sounds/dial-ring.mp3"
       },
       {
         "action": "Call the police",
         "results": "{char} dials the emergency number and recounts the terrifying events. The dispatcher assures them that help is on the way, instructing {char} to wait for an officer. {char} stands there, anxiously waiting, pondering the surreal nightmare they've endured.",
-        "next": "ending_2"
+        "next": "ending_2",
+        "sound": "assets/sounds/dial-ring.mp3"
       },
       {
         "action": "Continue running",
         "results": "{char} keeps sprinting down the seemingly never-ending corridor, the adrenaline still pumping through their veins. Yet, in the midst of their frantic escape, they start to reflect on what happened.",
-        "next": "ending_2"
+        "next": "ending_2",
+        "sound": "assets/sounds/running.mp3"
       }
     ],
     "epilogue": "{char} begins to contemplate the surreal experience they've been through, feeling as though they were trapped in a very deep, nightmarish slumber."

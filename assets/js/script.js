@@ -251,13 +251,18 @@ const storiesAndImages = {
     images: [
       "assets/images/forest1.jpg",
       "assets/images/forest2.jpg",
+      "assets/images/forest3.jpg",
+      "assets/images/forest4.jpg",
       // ... other haunted-forest images
     ]
   },
   "haunted-hotel": {
     images: [
       "assets/images/hotel1.jpg",
-      "assets/images/hotel1.jpg",
+      "assets/images/hotel2.jpg",
+      "assets/images/hotel3.jpg",
+      "assets/images/hotel4.jpg",
+
       // ... other haunted-forest images
     ]
   },
@@ -265,12 +270,16 @@ const storiesAndImages = {
     images: [
       "assets/images/house1.jpg",
       "assets/images/haunted-forest2.jpg",
+      "assets/images/hotel3.jpg",
+      "assets/images/hotel4.jpg",
       // ... other haunted-forest images
     ]
   },
   "pirate-ship": {
     images: [
       "assets/images/pirate-ship.jpg",
+      "assets/images/ship.jpg",
+      "assets/images/naval-battle-3195409_1920.jpg"
       // ... other haunted-forest images
     ]
   },
@@ -292,6 +301,13 @@ function getRandomSceneImage(storyName) {
 //Store player name in session storage
 document.getElementById("set-character-name-btn").addEventListener("click", function () {
   const charName = document.getElementById("character-name-input").value;
+
+  var username = document.getElementById('character-name-input').value;
+  if (username.trim()) { // Check if the username is not just whitespace
+      document.getElementById('confirmation-message').style.display = 'inline';
+  } else {
+      alert('Please enter a valid username.');
+  }
 
   if (charName) {
     sessionStorage.setItem("characterName", charName);

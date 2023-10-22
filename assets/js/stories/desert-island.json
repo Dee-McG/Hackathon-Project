@@ -85,9 +85,12 @@
         "dialogue": "You spin to see something disappearing into another room, light suddenly fills the room and blinds you, the room is bigger than you first thought with various doors leading to goodness knows where",
         "question": "What do you want to do?",
         "choices": [
-            {"action": "follow the something you saw", "result": "As you head towards the door, the ghostly being is directly in front of you, it suddenly goes dark", "next": "ending_2"},
-            {"action": "check out another of the rooms", "result": "You enter the side room, as you enter the room you are once again plunged into darkness", "next": "ending_2"},
-            {"action": "head back to the beach where you were dropped off", "result": "You head back towards the closed door and head out into the night", "next": "ending_1"}
+            {"action": "follow the something you saw", "result": "As you head towards the door, the ghostly being is directly in front of you, it suddenly goes dark", "next": "ending_2", "hoverSound": "assets/sounds/possessed-laugh.mp3",
+            "hoverSoundTimeOut": 200},
+            {"action": "check out another of the rooms", "result": "You enter the side room, as you enter the room you are once again plunged into darkness", "next": "ending_2", "hoverSound": "assets/sounds/demonic-woman-scream-6333.mp3",
+            "hoverSoundTimeOut": 200},
+            {"action": "head back to the beach where you were dropped off", "result": "You head back towards the closed door and head out into the night", "next": "ending_1", "hoverSound": "assets/sounds/possessed-laugh.mp3",
+            "hoverSoundTimeOut": 200}
         ],
         "epilogue": "not all is what it seems"
     },
@@ -97,9 +100,12 @@
         "dialogue": "Our group stops to catch there breath, whats going on around here, this definitly isnt a deserted island, slowly they make their way further towards the beach, where they see the boat that brought them to the island, but its still dark so why is the boat back?",
         "question": "What do you want to do?",
         "choices": [
-            {"action": "Keep going towards the boat", "result": "clinging together, moving slowly we head towards the boat", "next": "ending_1"},
-            {"action": "Hide in the trees and see if you can see whats going on", "result": "The darkness is terryfying the wind howling", "next": "ending_2"},
-            {"action": "Stay where you are", "result": "darkness seems to envelop us, making everything look the same", "next": "ending_0"}
+            {"action": "Keep going towards the boat", "result": "clinging together, moving slowly we head towards the boat", "next": "ending_1", "hoverSound": "assets/sounds/demonic-woman-scream-6333.mp3",
+            "hoverSoundTimeOut": 200},
+            {"action": "Hide in the trees and see if you can see whats going on", "result": "The darkness is terryfying the wind howling", "next": "ending_2", "hoverSound": "assets/sounds/possessed-laugh.mp3",
+            "hoverSoundTimeOut": 200},
+            {"action": "Stay where you are", "result": "darkness seems to envelop us, making everything look the same", "next": "ending_0", "hoverSound": "assets/sounds/demonic-woman-scream-6333.mp3",
+            "hoverSoundTimeOut": 200}
         ],
         "epilogue": "The thoughts in your mind make the darkness even scarier"
     },

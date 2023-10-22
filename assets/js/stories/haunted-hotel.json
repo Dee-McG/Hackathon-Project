@@ -2,11 +2,11 @@
   "details": {
     "name": "haunted-hotel",
     "about": "Embark on a heart-pounding adventure in the 'Haunted Hotel' – a spine-tingling tale of mysterious occurrences, eerie phone calls, and inexplicable forces lurking in the shadows. With each choice, you'll shape the destiny of the protagonist, and uncover the chilling secrets that blur the lines between dreams and reality",
-    "image": "../../assets/images/haunted-hotel-cover.png",
+    "image": "assets/images/haunted-hotel-cover.png",
     "alt": "A eerie room with a newspaper detailing the hotel's mysteries"
   },
   "scene_one": {
-    "soundOnLoad": "../../assets/sounds/boo-and-laugh-7060.mp3",
+    "soundOnLoad": "assets/sounds/boo-and-laugh-7060.mp3",
     "soundOnLoadTimeOut": 2000,
     "dialogue": "After a long, exhausting day, {char} finally settled into their hotel room. The soft lamplight cast a warm, inviting glow over the cozy space, promising a well-deserved rest. As the night deepened, a peaceful sleep embraced them. But suddenly, in the early hours, a loud, unexpected bang jolted {char} awake. Their heart raced as they groped for the lamp switch, flooding the room with a soft, eerie light. They cautiously stepped onto the cool floor, each footfall echoing through the silence. The door loomed ahead, its shadowy outline making them wonder what awaited them on the other side.",
     "question": "What do you do now?",
@@ -15,21 +15,21 @@
         "action": "With bated breath, {char} cautiously opens the door,",
         "result": "revealing... an empty, dimly lit corridor",
         "next": "scene_two_0",
-        "hoverSound": "../../assets/sounds/boo-and-laugh-7060.mp3",
+        "hoverSound": "assets/sounds/boo-and-laugh-7060.mp3",
         "hoverSoundTimeOut": 200
       },
       {
         "action": "{char}'s voice quivers as they call out, 'Who's there?'",
         "result": "but there's only silence in response.",
         "next": "scene_two_1",
-        "hoverSound": "../../assets/sounds/evil-spirit.mp3",
+        "hoverSound": "assets/sounds/evil-spirit.mp3",
         "hoverSoundTimeOut": 200
       },
       {
         "action": "Nervously, {char} takes slow steps, retreating to the safety of the hotel room's dimly lit interior.",
         "result": "They back away until they reach the base of the bed.",
         "next": "scene_two_2",
-        "sound": "../../assets/sounds/boo-and-laugh-7060.mp3",
+        "sound": "assets/sounds/boo-and-laugh-7060.mp3",
         "ClickSoundTimeOut": 100
         
       }

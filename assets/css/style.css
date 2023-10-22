@@ -93,9 +93,9 @@ header {
 
 /* start and rules buttons */
 .btn {
-    background-color: #5a2b10;
+    background-color: #ff5722;
     border: none;
-    color: #ff5722;
+    color: black;
     padding: 12px 24px;
     text-align: center;
     text-decoration: none;
@@ -212,6 +212,33 @@ a {
     list-style-type: none;
     margin: 10px
   }
+
+  /* Footer */
+
+  footer {
+    background-color: #2a2a2a;  /* Adjust color as needed */
+    padding: 10px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 0 20px;  /* Adjust padding as needed */
+}
+
+.github-icon img {
+    height: 30px;  /* Adjust size as needed */
+    width: auto;
+}
+
+.copyright-text {
+    color: #fff;  /* Adjust color as needed */
+    font-size: 14px;  /* Adjust font size as needed */
+}
+
 
   /* Media query */
   @media only screen and (max-width: 600px) {

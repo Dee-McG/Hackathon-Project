@@ -2,6 +2,7 @@ let startBtn = document.getElementById("start-btn");
 let startSection = document.getElementById("start-section");
 let storySelection = document.getElementById("story-selection-section");
 let hoverSoundTimeout;
+let globalAudio = new Audio();
 // Add all stories here
 const storyFiles = [
   "desert-island",
@@ -303,14 +304,17 @@ function replaceCharWithCharacterName(text) {
 const playSound = (soundURL, time) => {
   if (!soundURL) return;
 
-  // If a sound is currently waiting to be played, clear it
+  // If a sound is currently waiting to be played or is playing, clear/stop it
   if (hoverSoundTimeout) {
-    clearTimeout(hoverSoundTimeout);
+      clearTimeout(hoverSoundTimeout);
+  }
+  if(globalAudio) {
+      globalAudio.pause();
+      globalAudio.currentTime = 0;  // reset audio playback
   }
 
-  // Wait a short duration (e.g., 100ms) before playing the hover sound
   hoverSoundTimeout = setTimeout(() => {
-    let audio = new Audio(soundURL);
-    audio.play();
+      globalAudio.src = soundURL;
+      globalAudio.play();
   }, time);
 }

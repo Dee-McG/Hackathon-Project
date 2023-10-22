@@ -8,6 +8,17 @@
     "scene_one": {
         "soundOnLoad": "assets/sounds/horror.mp3",
         "soundOnLoadTimeOut": 2000,
+        "images": [
+            "assets/images/island1.jpg",
+            "assets/images/island2.jpg",
+            "assets/images/island-beach.jpg",
+            "assets/images/island-building.jpg",
+            "assets/images/island-lights.jpg",
+            "assets/images/island-doorway.jpg",
+            "assets/images/island-scene1.jpg",
+            "assets/images/island-shadow.jpg",
+            "assets/images/island-towards-beach.jpg"
+          ],
         "dialogue": "Halloween has come round again, you and three friends are going to celebrate differently this year, you are going to a desert island, twenty four hours with no escape what will this trip bring for you and your friends. It starts well enough you are dropped off as the sun begins to sink below the clouds, the boat disappears from view as you look at each other, this was really happening, how was the friendships going to be tested, could you make it through to the boat returning? Your three friends look at you to see what you want to do, 'lets explore' you said. We grab our bags and set off into the trees when suddenly we see a strange set of lights in front of us",
         "question": "What do you do now?",
         "choices": [
@@ -23,6 +34,17 @@
     "scene_two_0": {
         "soundOnLoad": "assets/sounds/horror-dance.mp3",
         "soundOnLoadTimeOut": 2000,
+        "images": [
+            "assets/images/island1.jpg",
+            "assets/images/island2.jpg",
+            "assets/images/island-beach.jpg",
+            "assets/images/island-building.jpg",
+            "assets/images/island-lights.jpg",
+            "assets/images/island-doorway.jpg",
+            "assets/images/island-scene1.jpg",
+            "assets/images/island-shadow.jpg",
+            "assets/images/island-towards-beach.jpg"
+          ],
         "dialogue": "The shadow is moving eratically, but there didnt seem to be a person there, what is it doing, is it dancing, or is it trying to find its way somewhere, silence filled the group as they looked at each other, this wasn't what they had planned, fear filled them as they looked on",
         "question": "What are you going to do now?",
         "choices": [
@@ -37,6 +59,17 @@
     "scene_two_1": {
         "soundOnLoad": "assets/sounds/spookymagic-7050.mp3",
         "soundOnLoadTimeOut": 2000,
+        "images": [
+            "assets/images/island1.jpg",
+            "assets/images/island2.jpg",
+            "assets/images/island-beach.jpg",
+            "assets/images/island-building.jpg",
+            "assets/images/island-lights.jpg",
+            "assets/images/island-doorway.jpg",
+            "assets/images/island-scene1.jpg",
+            "assets/images/island-shadow.jpg",
+            "assets/images/island-towards-beach.jpg"
+          ],
         "dialogue": "The building looks like an old church, windows smashed, crumbling bricks, and the lights seems to be coming through the top where some of the tiles are missing from the roof, something seems to be pulling you towards the building",
         "question": "What are you going to do?",
         "choices": [
@@ -52,6 +85,17 @@
     "scene_two_2": {
         "soundOnLoad": "assets/sounds/halloween-impact-01.mp3",
         "soundOnLoadTimeOut": 2000,
+        "images": [
+            "assets/images/island1.jpg",
+            "assets/images/island2.jpg",
+            "assets/images/island-beach.jpg",
+            "assets/images/island-building.jpg",
+            "assets/images/island-lights.jpg",
+            "assets/images/island-doorway.jpg",
+            "assets/images/island-scene1.jpg",
+            "assets/images/island-shadow.jpg",
+            "assets/images/island-towards-beach.jpg"
+          ],
         "dialogue": "Heading towards the mysterious object, a sudden flash of light goes off through the trees, the ground starts shaking and the object morphs into some mysterious being and turns towards you",
         "question": "Your group decides to:",
         "choices": [
@@ -67,6 +111,17 @@
     "scene_three_0": {
         "soundOnLoad": "assets/sounds/horror-dance.mp3",
         "soundOnLoadTimeOut": 2000,
+        "images": [
+            "assets/images/island1.jpg",
+            "assets/images/island2.jpg",
+            "assets/images/island-beach.jpg",
+            "assets/images/island-building.jpg",
+            "assets/images/island-lights.jpg",
+            "assets/images/island-doorway.jpg",
+            "assets/images/island-scene1.jpg",
+            "assets/images/island-shadow.jpg",
+            "assets/images/island-towards-beach.jpg"
+          ],
         "dialogue": "The shadow isnt a person, well not one that you would recognise, its all four of you in one being, almost like its morphing through each of you, its face twisted between the different features of you all, terror and fright reign the group, clinging together they are no longer sure what is happenning",
         "question": "What are you going to do?",
         "choices": [
@@ -82,6 +137,17 @@
     "scene_three_1": {
         "soundOnLoad": "assets/sounds/squeaky-door-open-113212.mp3",
         "soundOnLoadTimeOut": 2000,
+        "images": [
+            "assets/images/island1.jpg",
+            "assets/images/island2.jpg",
+            "assets/images/island-beach.jpg",
+            "assets/images/island-building.jpg",
+            "assets/images/island-lights.jpg",
+            "assets/images/island-doorway.jpg",
+            "assets/images/island-scene1.jpg",
+            "assets/images/island-shadow.jpg",
+            "assets/images/island-towards-beach.jpg"
+          ],
         "dialogue": "You spin to see something disappearing into another room, light suddenly fills the room and blinds you, the room is bigger than you first thought with various doors leading to goodness knows where",
         "question": "What do you want to do?",
         "choices": [
@@ -97,6 +163,17 @@
     "scene_three_2": {
         "soundOnLoad": "assets/sounds/halloween-impact-01.mp3",
         "soundOnLoadTimeOut": 2000,
+        "images": [
+            "assets/images/island1.jpg",
+            "assets/images/island2.jpg",
+            "assets/images/island-beach.jpg",
+            "assets/images/island-building.jpg",
+            "assets/images/island-lights.jpg",
+            "assets/images/island-doorway.jpg",
+            "assets/images/island-scene1.jpg",
+            "assets/images/island-shadow.jpg",
+            "assets/images/island-towards-beach.jpg"
+          ],
         "dialogue": "Our group stops to catch there breath, whats going on around here, this definitly isnt a deserted island, slowly they make their way further towards the beach, where they see the boat that brought them to the island, but its still dark so why is the boat back?",
         "question": "What do you want to do?",
         "choices": [

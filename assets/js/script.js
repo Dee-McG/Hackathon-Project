@@ -59,7 +59,7 @@ const loadDialogue = (story, scene) => {
   }
   // Load random image for the story
   const sceneImageElement = document.getElementById("scene-image");
-  sceneImageElement.src = getRandomSceneImage(story.details.name);
+  sceneImageElement.src = getRandomSceneImage(story.details.name, scene);
 };
 
 
@@ -314,59 +314,15 @@ cardWrapper.addEventListener("click", (event) => {
 });
 
 
-const storiesAndImages = {
-  "desert-island": {
-    images: [
-      "assets/images/island1.jpg",
-      "assets/images/island2.jpg",
-      "assets/images/island-beach.jpg",
-      "assets/images/island-building.jpg",
-      "assets/images/island-lights.jpg",
-      "assets/images/island-doorway.jpg",
-      "assets/images/island-scene1.jpg",
-      "assets/images/island-shadow.jpg",
-      "assets/images/island-towards-beach.jpg",
-      // ... other desert-island images
-    ]
-  },
-  "haunted-forest": {
-    images: [
-      "assets/images/forest1.jpg",
-      "assets/images/forest2.jpg",
-      // ... other haunted-forest images
-    ]
-  },
-  "haunted-hotel": {
-    images: [
-      "assets/images/hotel1.jpg",
-      "assets/images/hotel1.jpg",
-      // ... other haunted-forest images
-    ]
-  },
-  "haunted-mansion": {
-    images: [
-      "assets/images/house1.jpg",
-      "assets/images/haunted-forest2.jpg",
-      // ... other haunted-forest images
-    ]
-  },
-  "pirate-ship": {
-    images: [
-      "assets/images/pirate-ship.jpg",
-      // ... other haunted-forest images
-    ]
-  },
-
-};
-
 //Function to generate image
-function getRandomSceneImage(storyName) {
-  if (!storiesAndImages[storyName]) {
+function getRandomSceneImage(storyName, scene) {
+  if (!selectedStory[scene].images) {
     console.error(`No images found for story: ${storyName}`);
     return ""; // return a default image or an empty string
   }
 
-  const images = storiesAndImages[storyName].images;
+  const images = selectedStory[scene].images;
+  console.log(images)
   const randomIndex = Math.floor(Math.random() * images.length);
   return images[randomIndex];
 }
@@ -423,12 +379,18 @@ let modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
 let btn = document.getElementById("rules-btn");
+let headerBtn = document.getElementById("nav-rules-btn");
 
 // Get the <span> element that closes the modal
 let span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
 btn.onclick = function () {
+  modal.style.display = "block";
+}
+
+// When the user clicks on the button, open the modal
+headerBtn.onclick = function () {
   modal.style.display = "block";
 }
 

@@ -8,6 +8,10 @@
   "scene_one": {
     "dialogue": "Standing in front of a mysterious and eerie mansion on a dark Halloween night, {char} a group of friends contemplate their options. The wind howls and the trees sway ominously, {char} adding to the eerie atmosphere.",
     "question": "There are three friends, {char}, which do you choose?",
+    "images": [
+      "assets/images/house1.jpg",
+      "assets/images/haunted-forest2.jpg"
+    ],
     "choices": [
       {
         "action": "Feel uneasy about the mansion and question going in.",
@@ -30,6 +34,10 @@
   "scene_two_0": {
     "dialogue": "As the group cautiously enters the mansion, the door slams shut behind them, trapping them inside. They find themselves in a dimly lit hallway with three doors.",
     "question": "Which way should we go?",
+    "images": [
+      "assets/images/house1.jpg",
+      "assets/images/haunted-forest2.jpg"
+    ],
     "choices": [
       {
         "action": "Emily decides to go upstairs and explore the bedrooms.",
@@ -52,6 +60,10 @@
   "scene_two_1": {
     "dialogue": "As the friends sprint away from the mansion, they turn around and see a ghostly figure chasing them. Panic sets in, and they quickly consider their options.",
     "question": "What should we do?",
+    "images": [
+      "assets/images/house1.jpg",
+      "assets/images/haunted-forest2.jpg"
+    ],
     "choices": [
       {
         "action": "Alex",
@@ -74,6 +86,10 @@
   "scene_two_2": {
     "dialogue": "To their surprise, the door creaks open slowly, revealing a dimly lit hallway with three doors.",
     "question": "Which room should we enter first?",
+    "images": [
+      "assets/images/house1.jpg",
+      "assets/images/haunted-forest2.jpg"
+    ],
     "choices": [
       {
         "action": "Emily",
@@ -96,6 +112,10 @@
   "scene_three_0": {
     "dialogue": "As they make their way into the bedroom",
     "question": "What are they to expect?",
+    "images": [
+      "assets/images/house1.jpg",
+      "assets/images/haunted-forest2.jpg"
+    ],
     "choices": [
       {
         "action": "Alex",
@@ -123,6 +143,10 @@
   "scene_three_1": {
     "dialogue": "Investigate the creepy basement.",
     "question": "What should they expect in a dark and damp basement?",
+    "images": [
+      "assets/images/house1.jpg",
+      "assets/images/haunted-forest2.jpg"
+    ],
     "choices": [
       {
         "action": "Alex",
@@ -150,6 +174,10 @@
   "scene_three_2": {
     "dialogue": "Search the living room for clues.",
     "question": "What would they find in the living room?",
+    "images": [
+      "assets/images/house1.jpg",
+      "assets/images/haunted-forest2.jpg"
+    ],
     "choices": [
       {
         "action": "Alex",

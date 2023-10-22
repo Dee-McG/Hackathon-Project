@@ -8,6 +8,9 @@
   "scene_one": {
     "dialogue": "After a long, exhausting day, {char} finally settled into their hotel room. The soft lamplight cast a warm, inviting glow over the cozy space, promising a well-deserved rest. As the night deepened, a peaceful sleep embraced them. But suddenly, in the early hours, a loud, unexpected bang jolted {char} awake. Their heart raced as they groped for the lamp switch, flooding the room with a soft, eerie light. They cautiously stepped onto the cool floor, each footfall echoing through the silence. The door loomed ahead, its shadowy outline making them wonder what awaited them on the other side.",
     "question": "What do you do now?",
+    "images": [
+      "assets/images/hotel1.jpg"
+    ],
     "soundOnLoad": "assets/sounds/door-knock.mp3",
     "choices": [
       {
@@ -35,6 +38,9 @@
     "dialogue": "An eerie feeling washed over {char} as they stood before the empty corridor. Frozen in fear, they could barely breathe as an invisible force seemed to pull them backward into the room. The door slammed shut with a deafening thud.",
     "question": "{char} chooses to",
     "soundOnLoad": "assets/sounds/door-slam.mp3",
+    "images": [
+      "assets/images/hotel1.jpg"
+    ],
     "soundOnLoadTimeOut": 4000,
     "choices": [
       {
@@ -60,6 +66,9 @@
     "dialogue": "A sudden chill runs down {char}'s spine as the mysterious events continue to unfold. In the silence of the dimly lit corridor, {char}'s phone abruptly begins to ring. They walk over to it, their heart pounding in their chest, and see that it's an unknown number calling.",
     "question": "What does {char} do?",
     "soundOnLoad": "assets/sounds/phone-ring.mp3",
+    "images": [
+      "assets/images/hotel1.jpg"
+    ],
     "choices": [
       {
         "action": "{char} answers the phone",
@@ -83,6 +92,9 @@
     "dialogue": "Fear grips {char} as they ponder who could be knocking at their door at this unearthly hour. Suddenly, a deafening crash shatters the silence as the window shoots open, unleashing a gust of wind that sends the curtains dancing and the sound of the rain pouring deafens the room. In the dim light, {char} notices wet footprints slowly creeping toward them.",
     "question": "What does {char} do?",
     "soundOnLoad": "assets/sounds/rain-thunder.mp3",
+    "images": [
+      "assets/images/hotel1.jpg"
+    ],
     "choices": [
       {
         "action": "Dives onto the bed",
@@ -106,6 +118,9 @@
     "dialogue": "After a few agonizing seconds of being suspended in the air, {char}'s legs suddenly flip horizontally, and they crash into the ceiling, their gaze now fixed straight down at the floor. Paralyzed and unable to move, {char} strains to hear the unsettling sound of footsteps creeping ever closer. With immense effort, {char} finally breaks free from their strange predicament, plummeting to the ground with an almighty crash.",
     "question": "What does {char} do next?",
     "soundOnLoad": "assets/sounds/person-knocked-down.mp3",
+    "images": [
+      "assets/images/hotel1.jpg"
+    ],
     "choices": [
       {
         "action": "Run to the hotel room door",
@@ -129,6 +144,9 @@
     "dialogue": "After the harrowing scream from the room next door, {char} springs into action. They rush to their hotel room balcony and bravely climb across to the adjacent room from which the cry emanated. Peering through the window, {char} witnesses a horrifying sight—a woman pinned against the wall by a colossal, beastly figure, more animal than man.",
     "question": "What does {char} do?",
     "soundOnLoad": "assets/sounds/girl-scream.mp3",
+    "images": [
+      "assets/images/hotel1.jpg"
+    ],
     "choices": [
       {
         "action": "Smash through the window to save the woman",
@@ -153,6 +171,9 @@
     "dialogue": "After what felt like mere seconds, but in reality was much longer, {char} regains consciousness. In a state of shock, they jolt upright and sprint toward the hotel room door, wrenching it open and bolting into the corridor, desperate for help. Frantically searching their pockets, {char} retrieves their phone.",
     "question": "What does {char} do?",
     "soundOnLoad": "assets/sounds/running.mp3",
+    "images": [
+      "assets/images/hotel1.jpg"
+    ],
     "choices": [
       {
         "action": "Ring there friends and tell them what happened.",

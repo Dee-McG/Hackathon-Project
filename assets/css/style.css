@@ -233,6 +233,10 @@ footer {
   padding: 0 20px; /* Adjust padding as needed */
 }
 
+.github-icon {
+  text-align: center;
+}
+
 .github-icon img {
   height: 30px; /* Adjust size as needed */
   width: auto;

@@ -238,6 +238,13 @@ const storiesAndImages = {
     images: [
       "assets/images/island1.jpg",
       "assets/images/island2.jpg",
+      "assets/images/island-beach.jpg",
+      "assets/images/island-building.jpg",
+      "assets/images/island-lights.jpg",
+      "assets/images/island-doorway.jpg",
+      "assets/images/island-scene1.jpg",
+      "assets/images/island-shadow.jpg",
+      "assets/images/island-towards-beach.jpg",
       // ... other desert-island images
     ]
   },

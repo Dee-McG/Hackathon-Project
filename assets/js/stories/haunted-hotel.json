@@ -7,6 +7,7 @@
   },
   "scene_one": {
     "soundOnLoad": "../../assets/sounds/boo-and-laugh-7060.mp3",
+    "soundOnLoadTimeOut": 2000,
     "dialogue": "After a long, exhausting day, {char} finally settled into their hotel room. The soft lamplight cast a warm, inviting glow over the cozy space, promising a well-deserved rest. As the night deepened, a peaceful sleep embraced them. But suddenly, in the early hours, a loud, unexpected bang jolted {char} awake. Their heart raced as they groped for the lamp switch, flooding the room with a soft, eerie light. They cautiously stepped onto the cool floor, each footfall echoing through the silence. The door loomed ahead, its shadowy outline making them wonder what awaited them on the other side.",
     "question": "What do you do now?",
     "choices": [
@@ -14,7 +15,8 @@
         "action": "With bated breath, {char} cautiously opens the door,",
         "result": "revealing... an empty, dimly lit corridor",
         "next": "scene_two_0",
-        "hoverSound": "../../assets/sounds/boo-and-laugh-7060.mp3"
+        "hoverSound": "../../assets/sounds/boo-and-laugh-7060.mp3",
+        "hoverSoundTimeOut": 200
       },
       {
         "action": "{char}'s voice quivers as they call out, 'Who's there?'",
@@ -25,7 +27,9 @@
         "action": "Nervously, {char} takes slow steps, retreating to the safety of the hotel room's dimly lit interior.",
         "result": "They back away until they reach the base of the bed.",
         "next": "scene_two_2",
-        "sound": "../../assets/sounds/boo-and-laugh-7060.mp3"
+        "sound": "../../assets/sounds/boo-and-laugh-7060.mp3",
+        "ClickSoundTimeOut": 100
+        
       }
     ],
     "epilogue": "Suddenly, all of the lights go out, plunging {char} into darkness with only the dim moonlight shining through"

@@ -48,7 +48,7 @@ const loadDialogue = (story, scene) => {
     storyboard.textContent = dialogue;
     loadQuestion(story[scene]);
     if (story[scene]?.soundOnLoad) {
-      playSound(story[scene].soundOnLoad);
+      playSound(story[scene].soundOnLoad, story[scene].soundOnLoadTimeOut);
     }
   } else {
     // Handle end of game screen
@@ -88,7 +88,7 @@ const loadChoices = (scene) => {
     // Click sound
     choice.onclick = () => {
       if (scene.choices[index].sound) {
-        playSound(scene.choices[index].sound);
+        playSound(scene.choices[index].sound, scene.choices[index].ClickSoundTimeOut);
       }
       handleChoice(index);
     };
@@ -96,7 +96,7 @@ const loadChoices = (scene) => {
     // Hover sound
     if (scene.choices[index].hoverSound) {
       choice.addEventListener('mouseover', () => {
-        playHoverSound(scene.choices[index].hoverSound);
+        playSound(scene.choices[index].hoverSound, scene.choices[index].hoverSoundTimeOut);
       });
     }
   });
@@ -300,13 +300,7 @@ function replaceCharWithCharacterName(text) {
   return text.replace(/{char}/g, charName);
 }
 
-const playSound = (soundURL) => {
-  if (!soundURL) return;
-  let audio = new Audio(soundURL);
-  audio.play();
-}
-
-const playHoverSound = (soundURL) => {
+const playSound = (soundURL, time) => {
   if (!soundURL) return;
 
   // If a sound is currently waiting to be played, clear it
@@ -318,5 +312,5 @@ const playHoverSound = (soundURL) => {
   hoverSoundTimeout = setTimeout(() => {
     let audio = new Audio(soundURL);
     audio.play();
-  }, 100);
+  }, time);
 }

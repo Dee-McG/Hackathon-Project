@@ -33,8 +33,10 @@ startBtn.addEventListener("click", loadStorySelection);
 const loadStoryFromJson = async (story) => {
   const response = await fetch(`assets/js/stories/${story}.json`);
   const res = await response.json();
-  loadDialogue(res, "scene_one");
+  replaceCharWithCharacterName(res);
+  loadDialogue(selectedStory, "scene_one");
 };
+
 
 /**
  * Extracts the dialogue of the current scene from the provided story object.
@@ -42,14 +44,11 @@ const loadStoryFromJson = async (story) => {
  */
 const loadDialogue = (story, scene) => {
   currentSceneKey = scene;
-  selectedStory = story;
   const dialogue = story[scene]?.dialogue;
   const storyboard = document.querySelector("#storyboard"); // update this once story board is created
   // Replace {char} with the playername
-  const replacedDialogue = replaceCharWithCharacterName(dialogue);
-  storyboard.textContent = replacedDialogue;
-  if (replacedDialogue) {
-    storyboard.textContent = replacedDialogue;
+  storyboard.textContent = dialogue;
+  if (dialogue) {
     loadQuestion(story[scene]);
     if (story[scene]?.soundOnLoad) {
       playSound(story[scene].soundOnLoad, story[scene].soundOnLoadTimeOut);
@@ -70,11 +69,9 @@ const loadDialogue = (story, scene) => {
  */
 const loadQuestion = (scene) => {
   const question = document.getElementById("question");
-  question.style.display = "flex";
+  question.style.display = "block";
   question.innerText = scene.question;
   loadChoices(scene);
-  const replacedQuestionText = replaceCharWithCharacterName(question.innerText);
-  question.innerText = replacedQuestionText;
 }
 
 /**
@@ -325,9 +322,12 @@ document.getElementById("set-character-name-btn").addEventListener("click", func
  * @param {string} text - The text where replacements should be made.
  * @returns {string} - Text with {char} replaced by character name.
  */
-function replaceCharWithCharacterName(text) {
+function replaceCharWithCharacterName(story) {
   const charName = sessionStorage.getItem("characterName") || "DefaultName";
-  return text.replace(/{char}/g, charName);
+  let storyStr = JSON.stringify(story);
+  let reg = /{char}/g;
+  let formattedStory = storyStr.replace(reg, charName);
+  selectedStory = JSON.parse(formattedStory); //convert back to array
 }
 
 const playSound = (soundURL, time) => {
@@ -350,13 +350,13 @@ const playSound = (soundURL, time) => {
 
 //modal box
 // Get the modal
-var modal = document.getElementById("myModal");
+let modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("rules-btn");
+let btn = document.getElementById("rules-btn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+let span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
 btn.onclick = function () {

@@ -2,9 +2,15 @@
     --title-font: 'Creepster', cursive;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
     background-color: #2a2a2a;
-    font-family: var(--title-font, cursive); 
+    font-family: var(--title-font, cursive);
+    display: flex;
+    flex-direction: column;
 }
 
 h1, h2, h3 {
@@ -20,6 +26,7 @@ main {
     max-width: 1480px;
     text-align: center;
     margin: 0 auto;
+    flex: 1 0 auto;
 }
 
 #website-info {
@@ -89,6 +96,10 @@ header {
     font-family: 'Creepster', cursive; /* Spooky font for the label as well */
     color: #ff5722; /* Halloween orange color */
     margin-right: 8px; /* Some spacing between label and input */
+}
+
+button {
+  cursor: pointer;
 }
 
 /* start and rules buttons */
@@ -216,6 +227,7 @@ a {
   /* Footer */
 
   footer {
+    flex-shrink: 0;
     background-color: #2a2a2a;  /* Adjust color as needed */
     padding: 10px 0;
 }

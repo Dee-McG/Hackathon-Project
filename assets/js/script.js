@@ -129,10 +129,9 @@ const handleChoice = async (choiceIndex) => {
   let result = selectedStory[currentSceneKey].choices[choiceIndex].result;
   document.getElementById("storyboard").innerText = `${action}. ${result}`;
 
-  //await new Promise(resolve => setTimeout(resolve, 6000));
+  
   loadEpilogue(selectedStory[currentSceneKey]);
 
-  //await new Promise(resolve => setTimeout(resolve, 10000));
 
   const currentScene = selectedStory[currentSceneKey];
   currentSceneKey = currentScene.choices[choiceIndex].next;

@@ -6,72 +6,106 @@
         "alt": "Photo of desert island with a help message in the sand"
     },
     "scene_one": {
+        "soundOnLoad": "assets/sounds/horror.mp3",
+        "soundOnLoadTimeOut": 2000,
         "dialogue": "Halloween has come round again, you and three friends are going to celebrate differently this year, you are going to a desert island, twenty four hours with no escape what will this trip bring for you and your friends. It starts well enough you are dropped off as the sun begins to sink below the clouds, the boat disappears from view as you look at each other, this was really happening, how was the friendships going to be tested, could you make it through to the boat returning? Your three friends look at you to see what you want to do, 'lets explore' you said. We grab our bags and set off into the trees when suddenly we see a strange set of lights in front of us",
         "question": "What do you do now?",
         "choices": [
-            {"action": "Head back the way you have just come", "result": "As you turn round you see a shadow moving in front of you, this island was supposed to be deserted", "next": "scene_two_0"},
-            {"action": "Head towards the strange lights", "result": "A building looms into sight as the night sky descends", "next": "scene_two_1"},
-            {"action": "Ignore the lights and change direction", "result": "You cant quite make it out but it looks like something laid in the path", "next": "scene_two_2"}
+            {"action": "Head back the way you have just come", "result": "As you turn round you see a shadow moving in front of you, this island was supposed to be deserted", "next": "scene_two_0", "hoverSound": "assets/sounds/demonic-woman-scream-6333.mp3",
+            "hoverSoundTimeOut": 200},
+            {"action": "Head towards the strange lights", "result": "A building looms into sight as the night sky descends", "next": "scene_two_1", "hoverSound": "assets/sounds/mystery-jingle-46214.mp3",
+            "hoverSoundTimeOut": 200},
+            {"action": "Ignore the lights and change direction", "result": "You cant quite make it out but it looks like something laid in the path", "next": "scene_two_2", "hoverSound": "assets/sounds/demonic-woman-scream-6333.mp3",
+            "hoverSoundTimeOut": 200}
         ],
         "epilogue": "Each one of us is unsure if we have made the right choice but theres no turning back"
     },
     "scene_two_0": {
+        "soundOnLoad": "assets/sounds/horror-dance.mp3",
+        "soundOnLoadTimeOut": 2000,
         "dialogue": "The shadow is moving eratically, but there didnt seem to be a person there, what is it doing, is it dancing, or is it trying to find its way somewhere, silence filled the group as they looked at each other, this wasn't what they had planned, fear filled them as they looked on",
         "question": "What are you going to do now?",
         "choices": [
             {"action": "Move toward the shadow to get a closer look", "result": "As you get closer to the shadow, it turns to face you, shock fills the group", "next": "scene_three_0"},
-            {"action": "Hide in the trees and hope it goes away", "result": "The snapping of a twig beneath your foot makes the shadow spin towards you", "next": "scene_three_0"},
-            {"action": "Completley change direction and ignore the shadow", "result": "The night sky is suddenly lit up like its bonfire night, the shadow has disappeared", "next": "scene_three_2"}
+            {"action": "Hide in the trees and hope it goes away", "result": "The snapping of a twig beneath your foot makes the shadow spin towards you", "next": "scene_three_0", "hoverSound": "assets/sounds/ghost-scare-vintage-6062.mp3",
+            "hoverSoundTimeOut": 200},
+            {"action": "Completley change direction and ignore the shadow", "result": "The night sky is suddenly lit up like its bonfire night, the shadow has disappeared", "next": "scene_three_2", "hoverSound": "assets/sounds/possessed-laugh.mp3",
+            "hoverSoundTimeOut": 200}
         ],
         "epilogue": "Where has the shadow gone, and why is it here? This trip is full of the unexpected can we work together to get through this?"
     },
     "scene_two_1": {
+        "soundOnLoad": "assets/sounds/spookymagic-7050.mp3",
+        "soundOnLoadTimeOut": 2000,
         "dialogue": "The building looks like an old church, windows smashed, crumbling bricks, and the lights seems to be coming through the top where some of the tiles are missing from the roof, something seems to be pulling you towards the building",
         "question": "What are you going to do?",
         "choices": [
-            {"action": "Enter the building", "result": "as you stop in the middle of a great hall the door behind you slams", "next": "scene_three_1"},
-            {"action": "run and hide", "result": "You all run into the thickness of the trees, as you turn round you catch a shadow out of the corner of your eye its starting straight at you", "next": "scene_three_0"},
-            {"action": "head back towards the beach", "result": "As you turn it looks like there is a shadowy being stood near the building, you start to move at a faster pace.", "next": "scene_three_2"}
+            {"action": "Enter the building", "result": "as you stop in the middle of a great hall the door behind you slams", "next": "scene_three_1", "hoverSound": "assets/sounds/demonic-woman-scream-6333.mp3",
+            "hoverSoundTimeOut": 200},
+            {"action": "run and hide", "result": "You all run into the thickness of the trees, as you turn round you catch a shadow out of the corner of your eye its starting straight at you", "next": "scene_three_0", "hoverSound": "assets/sounds/ghost-scare-vintage-6062.mp3",
+            "hoverSoundTimeOut": 200},
+            {"action": "head back towards the beach", "result": "As you turn it looks like there is a shadowy being stood near the building, you start to move at a faster pace.", "next": "scene_three_2", "hoverSound": "assets/sounds/demonic-woman-scream-6333.mp3",
+            "hoverSoundTimeOut": 200}
         ],
         "epilogue": "everyone was terrified nothing could have prepared us for this"
     },
     "scene_two_2": {
+        "soundOnLoad": "assets/sounds/halloween-impact-01.mp3",
+        "soundOnLoadTimeOut": 2000,
         "dialogue": "Heading towards the mysterious object, a sudden flash of light goes off through the trees, the ground starts shaking and the object morphs into some mysterious being and turns towards you",
         "question": "Your group decides to:",
         "choices": [
-            {"action": "stand still and hope it goes away", "result": "The being starts coming towards you, you stand in fright huddled together", "next": "scene_three_0"},
-            {"action": "run and find somewhere to hide", "result": "You see a building that you enter to hide, finding yourselves in a dark room only lit by the moonlight", "next": "scene_three_1"},
-            {"action": "Go back towards the beach", "result": "The being disappears into the trees and out of sight", "next": "scene_three_2"}
+            {"action": "stand still and hope it goes away", "result": "The being starts coming towards you, you stand in fright huddled together", "next": "scene_three_0", "hoverSound": "assets/sounds/possessed-laugh.mp3",
+            "hoverSoundTimeOut": 200},
+            {"action": "run and find somewhere to hide", "result": "You see a building that you enter to hide, finding yourselves in a dark room only lit by the moonlight", "next": "scene_three_1", "hoverSound": "assets/sounds/ghost-scare-vintage-6062.mp3",
+            "hoverSoundTimeOut": 200},
+            {"action": "Go back towards the beach", "result": "The being disappears into the trees and out of sight", "next": "scene_three_2", "hoverSound": "assets/sounds/possessed-laugh.mp3",
+            "hoverSoundTimeOut": 200}
         ],
         "epilogue": "Is anywhere safe in the darkness of night"
     },
     "scene_three_0": {
+        "soundOnLoad": "assets/sounds/horror-dance.mp3",
+        "soundOnLoadTimeOut": 2000,
         "dialogue": "The shadow isnt a person, well not one that you would recognise, its all four of you in one being, almost like its morphing through each of you, its face twisted between the different features of you all, terror and fright reign the group, clinging together they are no longer sure what is happenning",
         "question": "What are you going to do?",
         "choices": [
-            {"action": "run and hide", "result": "You all grab hands and flee away from the being, trying to catch your breath you turn to see what has become of it", "next": "ending_0"},
-            {"action": "move closer to the shadowy being", "result": "The shadowy being takes off into the cover of the trees", "next": "ending_2"},
-            {"action": "wait and see what happens", "result": "A flash of light fills the dark night sky, followed by an almighty boom, you look back to where the being was", "next": "ending_0"}
+            {"action": "run and hide", "result": "You all grab hands and flee away from the being, trying to catch your breath you turn to see what has become of it", "next": "ending_0", "hoverSound": "assets/sounds/demonic-woman-scream-6333.mp3",
+            "hoverSoundTimeOut": 200},
+            {"action": "move closer to the shadowy being", "result": "The shadowy being takes off into the cover of the trees", "next": "ending_2", "hoverSound": "assets/sounds/ghost-scare-vintage-6062.mp3",
+            "hoverSoundTimeOut": 200},
+            {"action": "wait and see what happens", "result": "A flash of light fills the dark night sky, followed by an almighty boom, you look back to where the being was", "next": "ending_0", "hoverSound": "assets/sounds/demonic-woman-scream-6333.mp3",
+            "hoverSoundTimeOut": 200}
         ],
         "epilogue": "Is our minds playing tricks on us"
     },
     "scene_three_1": {
+        "soundOnLoad": "assets/sounds/squeaky-door-open-113212.mp3",
+        "soundOnLoadTimeOut": 2000,
         "dialogue": "You spin to see something disappearing into another room, light suddenly fills the room and blinds you, the room is bigger than you first thought with various doors leading to goodness knows where",
         "question": "What do you want to do?",
         "choices": [
-            {"action": "follow the something you saw", "result": "As you head towards the door, the ghostly being is directly in front of you, it suddenly goes dark", "next": "ending_2"},
-            {"action": "check out another of the rooms", "result": "You enter the side room, as you enter the room you are once again plunged into darkness", "next": "ending_2"},
-            {"action": "head back to the beach where you were dropped off", "result": "You head back towards the closed door and head out into the night", "next": "ending_1"}
+            {"action": "follow the something you saw", "result": "As you head towards the door, the ghostly being is directly in front of you, it suddenly goes dark", "next": "ending_2", "hoverSound": "assets/sounds/possessed-laugh.mp3",
+            "hoverSoundTimeOut": 200},
+            {"action": "check out another of the rooms", "result": "You enter the side room, as you enter the room you are once again plunged into darkness", "next": "ending_2", "hoverSound": "assets/sounds/demonic-woman-scream-6333.mp3",
+            "hoverSoundTimeOut": 200},
+            {"action": "head back to the beach where you were dropped off", "result": "You head back towards the closed door and head out into the night", "next": "ending_1", "hoverSound": "assets/sounds/possessed-laugh.mp3",
+            "hoverSoundTimeOut": 200}
         ],
         "epilogue": "not all is what it seems"
     },
     "scene_three_2": {
+        "soundOnLoad": "assets/sounds/halloween-impact-01.mp3",
+        "soundOnLoadTimeOut": 2000,
         "dialogue": "Our group stops to catch there breath, whats going on around here, this definitly isnt a deserted island, slowly they make their way further towards the beach, where they see the boat that brought them to the island, but its still dark so why is the boat back?",
         "question": "What do you want to do?",
         "choices": [
-            {"action": "Keep going towards the boat", "result": "clinging together, moving slowly we head towards the boat", "next": "ending_1"},
-            {"action": "Hide in the trees and see if you can see whats going on", "result": "The darkness is terryfying the wind howling", "next": "ending_2"},
-            {"action": "Stay where you are", "result": "darkness seems to envelop us, making everything look the same", "next": "ending_0"}
+            {"action": "Keep going towards the boat", "result": "clinging together, moving slowly we head towards the boat", "next": "ending_1", "hoverSound": "assets/sounds/demonic-woman-scream-6333.mp3",
+            "hoverSoundTimeOut": 200},
+            {"action": "Hide in the trees and see if you can see whats going on", "result": "The darkness is terryfying the wind howling", "next": "ending_2", "hoverSound": "assets/sounds/possessed-laugh.mp3",
+            "hoverSoundTimeOut": 200},
+            {"action": "Stay where you are", "result": "darkness seems to envelop us, making everything look the same", "next": "ending_0", "hoverSound": "assets/sounds/demonic-woman-scream-6333.mp3",
+            "hoverSoundTimeOut": 200}
         ],
         "epilogue": "The thoughts in your mind make the darkness even scarier"
     },

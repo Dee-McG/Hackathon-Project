@@ -21,7 +21,9 @@
       {
         "action": "{char}'s voice quivers as they call out, 'Who's there?'",
         "result": "but there's only silence in response.",
-        "next": "scene_two_1"
+        "next": "scene_two_1",
+        "hoverSound": "../../assets/sounds/evil-spirit.mp3",
+        "hoverSoundTimeOut": 200
       },
       {
         "action": "Nervously, {char} takes slow steps, retreating to the safety of the hotel room's dimly lit interior.",

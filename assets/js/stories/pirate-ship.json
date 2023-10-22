@@ -8,8 +8,12 @@
   "scene_one": {
     "dialogue": "As the golden sun dipped below the horizon, casting a fiery hue across the bustling harbor, {char} stood at the water's edge, their heart torn between the allure of the sea and the dread of the unknown. The tranquil waters sparkled with the last remnants of daylight, beckoning him towards the waiting vessels. But as {char} approached, a chilling realization set in... the only options before there were ominous pirate ships, their tattered black flags billowing in the evening breeze. The decision loomed large, and with each creaking plank and ominous shadow, there was no good choice here.",
     "question": "There are three ships, {char}, which do you choose?",
+    "soundOnLoad": "assets/sounds/a-piano-with-a-creepy-atmosphere-for-scary-stories-demo-version-158423.mp3",
+    "soundOnLoadTimeOut": 2000,
     "images": [
-      "assets/images/pirate-ship/3-pirate-ships.jpeg"
+      "assets/images/pirate-ship/3-pirate-ships.jpeg",
+      "assets/images/pirate-ship/pirate-ship-2.jpeg",
+      "assets/images/pirate-ship/pirate-ship-3.jpeg"
     ],
     "choices": [
       {
@@ -33,6 +37,8 @@
   "scene_two_0": {
     "dialogue": "Amidst the chaos of a menacing pirate warship, with cannons bellowing and sails billowing ominously, an eerie hush fell over the deck as Captain Jack Sparrow materialized from the shadows. In his gnarled hand, he brandished not a sword, but a rotten cucumber, its fetid stench assaulting the senses. With a sinister grin, he flung the decaying vegetable directly at {char}, who watched in horror as the soggy projectile hurtled toward them. As the cucumber splattered upon impact, the crew erupted into uneasy laughter, but the malicious glee in Captain Sparrow's eyes sent a shiver down their spine, for in his unpredictable whimsy lay the true terror of this enigmatic pirate captain.",
     "question": "{char} chooses to ",
+    "soundOnLoad": "assets/sounds/heart-beat.mp3",
+    "soundOnLoadTimeOut": 2000,
     "images": [
       "assets/images/pirate-ship/jack-sparrow-1.jpeg",
       "assets/images/pirate-ship/jack-sparrow-2.jpeg"
@@ -59,7 +65,13 @@
   "scene_two_1": {
     "dialogue": "As the sun dipped below the horizon, casting a fiery glow across the tranquil waters, The Scurvy Scallywag, set sail with an air of eerie anticipation. Its tattered sails billowed in the dying light, and the crew, a motley band of rogues, seemed to dissolve into the encroaching darkness one by one, their spectral silhouettes fading as the ship glided further into the mysterious depths of the boundless sea, leaving only the unsettling whisper of their sinister laughter behind.",
     "question": "{char} decides to ",
-    "images": [],
+    "soundOnLoad": "assets/sounds/squeaky-door-open-113212.mp3",
+    "soundOnLoadTimeOut": 2000,
+    "images": [
+      "assets/images/pirate-ship/empty.jpeg",
+      "assets/images/pirate-ship/empty-2.jpeg",
+      "assets/images/pirate-ship/empty-3.jpeg"
+    ],
     "choices": [
       {
         "action": "Attempt to sail the ship",
@@ -81,8 +93,14 @@
   },
   "scene_two_2": {
     "dialogue": "In the pale moonlight, a ghostly siren's haunting song echoed as it carried across the salt tinged breeze, a mournful melody that beckoned lost souls to the depths of the briny abyss.",
-    "question": "Curios about the sound, {char}",
-    "images": [],
+    "question": "Curious about the sound, {char}",
+    "soundOnLoad": "assets/sounds/mystery-jingle-46214.mp3",
+    "soundOnLoadTimeOut": 2000,
+    "images": [
+      "assets/images/pirate-ship/siren-1.jpeg",
+      "assets/images/pirate-ship/siren-2.jpeg",
+      "assets/images/pirate-ship/siren-3.jpeg"
+    ],
     "choices": [
       {
         "action": "Take the lifeboat to get closer",
@@ -105,7 +123,16 @@
   "scene_three_0": {
     "dialogue": "{char}'s vengeful assault came to an abrupt halt as a mournful, otherworldly wail pierced the heavens, causing them to look up in dread at the ethereal, haunting sound that seemed to portend an even darker twist to this confrontation. The laughter quickly turned to dread, unmistakable fear spread across the faces of all crew members and they began to run.",
     "question": "Upon seeing the fearless crew swiftly turn to terrified mess, {char} decides to",
-    "images": [],
+    "soundOnLoad": "assets/sounds/ghost-scare-vintage-6062.mp3",
+    "soundOnLoadTimeOut": 2000,
+    "images": [
+      "assets/images/pirate-ship/evil-1.jpeg",
+      "assets/images/pirate-ship/evil-2.jpeg",
+      "assets/images/pirate-ship/evil-3.jpeg",
+      "assets/images/pirate-ship/spec-1.jpeg",
+      "assets/images/pirate-ship/spec-2.jpeg",
+      "assets/images/pirate-ship/spec-3.jpeg"
+    ],
     "choices": [
       {
         "action": "Stand strong",
@@ -128,7 +155,13 @@
   "scene_three_1": {
     "dialogue": "A zombie shark appeared out of no where, a terrifying, otherworldly creature with blood red eyes and a ghostly glow, swimming rapidly towards {char}, there were not many options left",
     "question": "{char} attempts to",
-    "images": [],
+    "soundOnLoad": "assets/sounds/halloween-impact.mp3",
+    "soundOnLoadTimeOut": 2000,
+    "images": [
+      "assets/images/pirate-ship/zombie-shark-1.jpeg",
+      "assets/images/pirate-ship/zombie-shark-2.jpeg",
+      "assets/images/pirate-ship/zombie-shark-3.jpeg"
+    ],
     "choices": [
       {
         "action": "Climb back on the boat",
@@ -151,7 +184,13 @@
   "scene_three_2": {
     "dialogue": "With an alluring facade that concealed her malevolent intentions, the evil siren's enchanting song lured {char} towards their doom, trying to capture their soul in her treacherous web of deceit.",
     "question": "Breaking from the spell, {char} decides to",
-    "images": [],
+    "soundOnLoad": "assets/sounds/demonic-woman-scream-6333.mp3",
+    "soundOnLoadTimeOut": 2000,
+    "images": [
+      "assets/images/pirate-ship/swim.jpeg",
+      "assets/images/pirate-ship/swim-2.jpeg",
+      "assets/images/pirate-ship/swim-3.jpeg"
+    ],
     "choices": [
       {
         "action": "Swim back to the ship",

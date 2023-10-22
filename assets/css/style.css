@@ -259,12 +259,12 @@ footer {
 }
 
 
-    .button {
-        width: 90%; /* Almost full width on mobile for easy tapping */
-        margin: 10px auto;
-        display: block; /* Stack buttons on top of each other */
-    }    
-  }
+.button {
+    width: 90%; /* Almost full width on mobile for easy tapping */
+    margin: 10px auto;
+    display: block; /* Stack buttons on top of each other */
+}    
+
 
 .project-info a {
 text-align: center;

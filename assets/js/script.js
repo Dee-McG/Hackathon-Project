@@ -1,6 +1,8 @@
 let startBtn = document.getElementById("start-btn");
 let startSection = document.getElementById("start-section");
 let storySelection = document.getElementById("story-selection-section");
+let hoverSoundTimeout;
+let globalAudio = new Audio();
 // Add all stories here
 const storyFiles = [
   "desert-island",
@@ -46,6 +48,9 @@ const loadDialogue = (story, scene) => {
   if (dialogue) {
     storyboard.textContent = dialogue;
     loadQuestion(story[scene]);
+    if (story[scene]?.soundOnLoad) {
+      playSound(story[scene].soundOnLoad, story[scene].soundOnLoadTimeOut);
+    }
   } else {
     // Handle end of game screen
     console.error("Dialogue for the current scene not found.");
@@ -80,9 +85,24 @@ const loadChoices = (scene) => {
   document.getElementById("choices").style.display = "flex";
   choices.forEach((choice, index) => {
     choice.innerText = scene.choices[index].action;
-    choice.onclick = () => handleChoice(index);
+
+    // Click sound
+    choice.onclick = () => {
+      if (scene.choices[index].sound) {
+        playSound(scene.choices[index].sound, scene.choices[index].ClickSoundTimeOut);
+      }
+      handleChoice(index);
+    };
+
+    // Hover sound
+    if (scene.choices[index].hoverSound) {
+      choice.addEventListener('mouseover', () => {
+        playSound(scene.choices[index].hoverSound, scene.choices[index].hoverSoundTimeOut);
+      });
+    }
   });
 }
+
 
 /**
  * Extracts the scene options from the current scene and loads the epilogue into html
@@ -281,3 +301,20 @@ function replaceCharWithCharacterName(text) {
   return text.replace(/{char}/g, charName);
 }
 
+const playSound = (soundURL, time) => {
+  if (!soundURL) return;
+
+  // If a sound is currently waiting to be played or is playing, clear/stop it
+  if (hoverSoundTimeout) {
+      clearTimeout(hoverSoundTimeout);
+  }
+  if(globalAudio) {
+      globalAudio.pause();
+      globalAudio.currentTime = 0;  // reset audio playback
+  }
+
+  hoverSoundTimeout = setTimeout(() => {
+      globalAudio.src = soundURL;
+      globalAudio.play();
+  }, time);
+}

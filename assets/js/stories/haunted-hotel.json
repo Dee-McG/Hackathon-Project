@@ -6,74 +6,167 @@
     "alt": "A eerie room with a newspaper detailing the hotel's mysteries"
   },
   "scene_one": {
-      "dialogue": "After a long, exhausting day, {char} finally settled into their hotel room. The soft lamplight cast a warm, inviting glow over the cozy space, promising a well-deserved rest. As the night deepened, a peaceful sleep embraced them. But suddenly, in the early hours, a loud, unexpected bang jolted {char} awake. Their heart raced as they groped for the lamp switch, flooding the room with a soft, eerie light. They cautiously stepped onto the cool floor, each footfall echoing through the silence. The door loomed ahead, its shadowy outline making them wonder what awaited them on the other side.",
-      "question": "What do you do now?",
-      "choices": [
-          {"action": "With bated breath, {char} cautiously opens the door,", "result": "revealing... an empty, dimly lit corridor", "next": "scene_two_0"},
-          {"action": "{char}'s voice quivers as they call out, 'Who's there?'", "result": "but there's only silence in response.", "next": "scene_two_1"},
-          {"action": "Nervously, {char} takes slow steps, retreating to the safety of the hotel room's dimly lit interior.", "result": "They back away until they reach the base of the bed.", "next": "scene_two_2"}
-      ],
-      "epilogue": "Suddenly, all of the lights go out, plunging {char} into darkness with only the dim moonlight shining through"
+    "soundOnLoad": "../../assets/sounds/boo-and-laugh-7060.mp3",
+    "soundOnLoadTimeOut": 2000,
+    "dialogue": "After a long, exhausting day, {char} finally settled into their hotel room. The soft lamplight cast a warm, inviting glow over the cozy space, promising a well-deserved rest. As the night deepened, a peaceful sleep embraced them. But suddenly, in the early hours, a loud, unexpected bang jolted {char} awake. Their heart raced as they groped for the lamp switch, flooding the room with a soft, eerie light. They cautiously stepped onto the cool floor, each footfall echoing through the silence. The door loomed ahead, its shadowy outline making them wonder what awaited them on the other side.",
+    "question": "What do you do now?",
+    "choices": [
+      {
+        "action": "With bated breath, {char} cautiously opens the door,",
+        "result": "revealing... an empty, dimly lit corridor",
+        "next": "scene_two_0",
+        "hoverSound": "../../assets/sounds/boo-and-laugh-7060.mp3",
+        "hoverSoundTimeOut": 200
+      },
+      {
+        "action": "{char}'s voice quivers as they call out, 'Who's there?'",
+        "result": "but there's only silence in response.",
+        "next": "scene_two_1",
+        "hoverSound": "../../assets/sounds/evil-spirit.mp3",
+        "hoverSoundTimeOut": 200
+      },
+      {
+        "action": "Nervously, {char} takes slow steps, retreating to the safety of the hotel room's dimly lit interior.",
+        "result": "They back away until they reach the base of the bed.",
+        "next": "scene_two_2",
+        "sound": "../../assets/sounds/boo-and-laugh-7060.mp3",
+        "ClickSoundTimeOut": 100
+        
+      }
+    ],
+    "epilogue": "Suddenly, all of the lights go out, plunging {char} into darkness with only the dim moonlight shining through"
   },
   "scene_two_0": {
-      "dialogue": "An eerie feeling washed over {char} as they stood before the empty corridor. Frozen in fear, they could barely breathe as an invisible force seemed to pull them backward into the room. The door slammed shut with a deafening thud.",
-      "question": "{char} chooses to",
-      "choices": [
-          {"action": "Try to grab the hand pulling you to fend it off", "result": "Panic takes hold as {char} reaches out, attempting to grasp what they believe is a hand, but instead, they feel only an icy, presence.", "next": "scene_three_0"},
-          {"action": "Screams out for help", "result": "Desperation fills the air as {char} screams for assistance, but the force pulling them only accelerates.", "next": "scene_three_0"},
-          {"action": "Trying to grab a funiture to stop being pulled", "result": "You feel the leg of the bed but the force pulling you is too powerful and you continue", "next": "scene_three_0"}
-      ],
-      "epilogue": "Suddenly, the tormenting pull stops, leaving {char} suspended in the dimly lit room, wondering what awaits them next."
+    "dialogue": "An eerie feeling washed over {char} as they stood before the empty corridor. Frozen in fear, they could barely breathe as an invisible force seemed to pull them backward into the room. The door slammed shut with a deafening thud.",
+    "question": "{char} chooses to",
+    "choices": [
+      {
+        "action": "Try to grab the hand pulling you to fend it off",
+        "result": "Panic takes hold as {char} reaches out, attempting to grasp what they believe is a hand, but instead, they feel only an icy, presence.",
+        "next": "scene_three_0"
+      },
+      {
+        "action": "Screams out for help",
+        "result": "Desperation fills the air as {char} screams for assistance, but the force pulling them only accelerates.",
+        "next": "scene_three_0"
+      },
+      {
+        "action": "Trying to grab a funiture to stop being pulled",
+        "result": "You feel the leg of the bed but the force pulling you is too powerful and you continue",
+        "next": "scene_three_0"
+      }
+    ],
+    "epilogue": "Suddenly, the tormenting pull stops, leaving {char} suspended in the dimly lit room, wondering what awaits them next."
   },
   "scene_two_1": {
-      "dialogue": "A sudden chill runs down {char}'s spine as the mysterious events continue to unfold. In the silence of the dimly lit corridor, {char}'s phone abruptly begins to ring. They walk over to it, their heart pounding in their chest, and see that it's an unknown number calling.",
-      "question": "What does {char} do?",
-      "choices": [
-          {"action": "{char} answers the phone", "results": "With trembling hands, {char} answers the call, and a strangely familiar voice, yet unrecognizable, urgently tells them to run, to leave the hotel immediately, as it's not safe here.", "next": "scene_three_1"},
-          {"action": "{char} ignores the call when a voicemail comes through, {char listens to the voicemail}", "results": "As the call goes unanswered, a voicemail notification appears on the screen. {char} hesitates but ultimately decides to listen to it. A strangely familiar voice, yet unrecognizable, urgently tells them to run, to leave the hotel immediately, as it's not safe here.", "next": "scene_three_1"},
-          {"action": "Fearful and confused, {char} decides to ignore the calls and voicemail and returns to the bed, hoping it's just a bizarre coincidence.", "results": "", "next": "scene_three_1"}
-      ],
-      "epilogue": "Just as {char} contemplates their next move, a piercing scream echoes from the room next door, sending shivers down their spine and raising the stakes of this mysterious night."
+    "dialogue": "A sudden chill runs down {char}'s spine as the mysterious events continue to unfold. In the silence of the dimly lit corridor, {char}'s phone abruptly begins to ring. They walk over to it, their heart pounding in their chest, and see that it's an unknown number calling.",
+    "question": "What does {char} do?",
+    "choices": [
+      {
+        "action": "{char} answers the phone",
+        "results": "With trembling hands, {char} answers the call, and a strangely familiar voice, yet unrecognizable, urgently tells them to run, to leave the hotel immediately, as it's not safe here.",
+        "next": "scene_three_1"
+      },
+      {
+        "action": "{char} ignores the call when a voicemail comes through, {char listens to the voicemail}",
+        "results": "As the call goes unanswered, a voicemail notification appears on the screen. {char} hesitates but ultimately decides to listen to it. A strangely familiar voice, yet unrecognizable, urgently tells them to run, to leave the hotel immediately, as it's not safe here.",
+        "next": "scene_three_1"
+      },
+      {
+        "action": "Fearful and confused, {char} decides to ignore the calls and voicemail and returns to the bed, hoping it's just a bizarre coincidence.",
+        "results": "",
+        "next": "scene_three_1"
+      }
+    ],
+    "epilogue": "Just as {char} contemplates their next move, a piercing scream echoes from the room next door, sending shivers down their spine and raising the stakes of this mysterious night."
   },
   "scene_two_2": {
-      "dialogue": "Fear grips {char} as they ponder who could be knocking at their door at this unearthly hour. Suddenly, a deafening crash shatters the silence as the window shoots open, unleashing a gust of wind that sends the curtains dancing. In the dim light, {char} notices wet footprints slowly creeping toward them.",
-      "question": "What does {char} do?",
-      "choices": [
-          {"action": "Dives onto the bed", "results": "With a heart pounding like a drum, {char} leaps onto the bed, pulling the covers tight around them. They squeeze their eyes shut, praying for it all to be a nightmare. Suddenly, they hear something leap off the ground, and as they open their eyes, a horrifying face looms directly above them, causing {char} to scream at the top of their lungs.", "next": "scene_three_2"},
-          {"action": "Runs towards the hotel room door", "results": "Panic surges as {char} rushes to the door, desperate to escape. But in a burst of fear, they discover the door is inexplicably locked. {char} turns around, only to be met with a ghostly face hovering directly in front of them. ", "next": "scene_three_2"},
-          {"action": "Jumps into the bathroom and locks the door behind them", "results": "In a frantic scramble, {char} dives into the bathroom, slamming the door shut and locking it behind them. Standing in pitch-black darkness, their back against the door, they hear the shower curtain start to flap ominously. Overwhelmed by fear, {char} collapses to the ground.", "next": "scene_three_2"}
-      ],
-      "epilogue": "As an overwhelming sense of fear envelops {char}, they lose consciousness, unable to bear the terror of the night any longer."
+    "dialogue": "Fear grips {char} as they ponder who could be knocking at their door at this unearthly hour. Suddenly, a deafening crash shatters the silence as the window shoots open, unleashing a gust of wind that sends the curtains dancing. In the dim light, {char} notices wet footprints slowly creeping toward them.",
+    "question": "What does {char} do?",
+    "choices": [
+      {
+        "action": "Dives onto the bed",
+        "results": "With a heart pounding like a drum, {char} leaps onto the bed, pulling the covers tight around them. They squeeze their eyes shut, praying for it all to be a nightmare. Suddenly, they hear something leap off the ground, and as they open their eyes, a horrifying face looms directly above them, causing {char} to scream at the top of their lungs.",
+        "next": "scene_three_2"
+      },
+      {
+        "action": "Runs towards the hotel room door",
+        "results": "Panic surges as {char} rushes to the door, desperate to escape. But in a burst of fear, they discover the door is inexplicably locked. {char} turns around, only to be met with a ghostly face hovering directly in front of them. ",
+        "next": "scene_three_2"
+      },
+      {
+        "action": "Jumps into the bathroom and locks the door behind them",
+        "results": "In a frantic scramble, {char} dives into the bathroom, slamming the door shut and locking it behind them. Standing in pitch-black darkness, their back against the door, they hear the shower curtain start to flap ominously. Overwhelmed by fear, {char} collapses to the ground.",
+        "next": "scene_three_2"
+      }
+    ],
+    "epilogue": "As an overwhelming sense of fear envelops {char}, they lose consciousness, unable to bear the terror of the night any longer."
   },
   "scene_three_0": {
-      "dialogue": "After a few agonizing seconds of being suspended in the air, {char}'s legs suddenly flip horizontally, and they crash into the ceiling, their gaze now fixed straight down at the floor. Paralyzed and unable to move, {char} strains to hear the unsettling sound of footsteps creeping ever closer. With immense effort, {char} finally breaks free from their strange predicament, plummeting to the ground with an almighty crash.",
-      "question": "What does {char} do next?",
-      "choices": [
-          {"action": "Run to the hotel room door", "results": "Desperation takes hold as {char} races toward the hotel room door, yanking at the handle. It refuses to budge. Panicking, {char} whirls around to find a colossal, otherworldly figure standing just a few feet away.", "next": "ending_0"},
-          {"action": "Look for whatever was walking towards them to fend them off", "results": "{char} swiftly turns their attention to the source of the footsteps, near the windows. There, an immense, indescribable figure with a nightmarish visage stands. Steeling themselves, {char} charges toward the figure, ready to fight for their life.", "next": "ending_0"},
-          {"action": "scream for help", "results": "As a towering, ghostly figure materializes nearby, {char}, in a frenzy of panic, lets out a piercing scream for help. It's a last resort, as they realize there's seemingly nothing else to be done.", "next": "ending_0"}
-      ],
-      "epilogue": "In the dimly lit room, {char} now discerns the presence of something ominous, but the true nature of this presence remains shrouded in a veil of fear and uncertainty."
+    "dialogue": "After a few agonizing seconds of being suspended in the air, {char}'s legs suddenly flip horizontally, and they crash into the ceiling, their gaze now fixed straight down at the floor. Paralyzed and unable to move, {char} strains to hear the unsettling sound of footsteps creeping ever closer. With immense effort, {char} finally breaks free from their strange predicament, plummeting to the ground with an almighty crash.",
+    "question": "What does {char} do next?",
+    "choices": [
+      {
+        "action": "Run to the hotel room door",
+        "results": "Desperation takes hold as {char} races toward the hotel room door, yanking at the handle. It refuses to budge. Panicking, {char} whirls around to find a colossal, otherworldly figure standing just a few feet away.",
+        "next": "ending_0"
+      },
+      {
+        "action": "Look for whatever was walking towards them to fend them off",
+        "results": "{char} swiftly turns their attention to the source of the footsteps, near the windows. There, an immense, indescribable figure with a nightmarish visage stands. Steeling themselves, {char} charges toward the figure, ready to fight for their life.",
+        "next": "ending_0"
+      },
+      {
+        "action": "scream for help",
+        "results": "As a towering, ghostly figure materializes nearby, {char}, in a frenzy of panic, lets out a piercing scream for help. It's a last resort, as they realize there's seemingly nothing else to be done.",
+        "next": "ending_0"
+      }
+    ],
+    "epilogue": "In the dimly lit room, {char} now discerns the presence of something ominous, but the true nature of this presence remains shrouded in a veil of fear and uncertainty."
   },
   "scene_three_1": {
-      "dialogue": "After the harrowing scream from the room next door, {char} springs into action. They rush to their hotel room balcony and bravely climb across to the adjacent room from which the cry emanated. Peering through the window, {char} witnesses a horrifying sight—a woman pinned against the wall by a colossal, beastly figure, more animal than man.",
-      "question": "What does {char} do?",
-      "choices": [
-          {"action": "Smash through the window to save the woman", "results": "Fueled by adrenaline, {char} shatters the window and charges toward the menacing figure, prepared to tackle it to the ground. But as they approach, the beastly man swiftly turns and seizes {char} by the throat, rendering them helpless and unable to break free.", "next": "ending_0"},
-          {"action": "Jump back to  your hotel room balcony", "results": "Overwhelmed by fear and realizing the immense danger they face, {char} retreats to their own balcony, hoping to avoid becoming the next victim.", "next": "ending_1"},
-          {"action": "Accept there is no end to this nightmare", "results": "Utterly defeated and unsure of what to do, {char} stands there, dejected and lost. They slump to the ground and close their eyes, yearning for this relentless nightmare to come to an end.", "next": "ending_1"}
-      ],
-      "epilogue": "{char} now comprehends that this nightmarish ordeal is caused by something that appears human but possesses the savage and untamed nature of a wild beast."
+    "dialogue": "After the harrowing scream from the room next door, {char} springs into action. They rush to their hotel room balcony and bravely climb across to the adjacent room from which the cry emanated. Peering through the window, {char} witnesses a horrifying sight—a woman pinned against the wall by a colossal, beastly figure, more animal than man.",
+    "question": "What does {char} do?",
+    "choices": [
+      {
+        "action": "Smash through the window to save the woman",
+        "results": "Fueled by adrenaline, {char} shatters the window and charges toward the menacing figure, prepared to tackle it to the ground. But as they approach, the beastly man swiftly turns and seizes {char} by the throat, rendering them helpless and unable to break free.",
+        "next": "ending_0"
+      },
+      {
+        "action": "Jump back to  your hotel room balcony",
+        "results": "Overwhelmed by fear and realizing the immense danger they face, {char} retreats to their own balcony, hoping to avoid becoming the next victim.",
+        "next": "ending_1"
+      },
+      {
+        "action": "Accept there is no end to this nightmare",
+        "results": "Utterly defeated and unsure of what to do, {char} stands there, dejected and lost. They slump to the ground and close their eyes, yearning for this relentless nightmare to come to an end.",
+        "next": "ending_1"
+      }
+    ],
+    "epilogue": "{char} now comprehends that this nightmarish ordeal is caused by something that appears human but possesses the savage and untamed nature of a wild beast."
   },
   "scene_three_2": {
-      "dialogue": "After what felt like mere seconds, but in reality was much longer, {char} regains consciousness. In a state of shock, they jolt upright and sprint toward the hotel room door, wrenching it open and bolting into the corridor, desperate for help. Frantically searching their pockets, {char} retrieves their phone.",
-      "question": "What does {char} do?",
-      "choices": [
-          {"action": "Ring there friends and tell them what happened.", "results": "With trembling hands, {char} dials their friend's number and tries to explain what transpired. However, their friend's voice on the other end reveals an unsettling revelation—they were knocking at {char}'s door last night because they couldn't enter their own room.", "next": "ending_2"},
-          {"action": "Call the police", "results": "{char} dials the emergency number and recounts the terrifying events. The dispatcher assures them that help is on the way, instructing {char} to wait for an officer. {char} stands there, anxiously waiting, pondering the surreal nightmare they've endured.", "next": "ending_2"},
-          {"action": "Continue running", "results": "{char} keeps sprinting down the seemingly never-ending corridor, the adrenaline still pumping through their veins. Yet, in the midst of their frantic escape, they start to reflect on what happened.", "next": "ending_2"}
-      ],
-      "epilogue": "{char} begins to contemplate the surreal experience they've been through, feeling as though they were trapped in a very deep, nightmarish slumber."
+    "dialogue": "After what felt like mere seconds, but in reality was much longer, {char} regains consciousness. In a state of shock, they jolt upright and sprint toward the hotel room door, wrenching it open and bolting into the corridor, desperate for help. Frantically searching their pockets, {char} retrieves their phone.",
+    "question": "What does {char} do?",
+    "choices": [
+      {
+        "action": "Ring there friends and tell them what happened.",
+        "results": "With trembling hands, {char} dials their friend's number and tries to explain what transpired. However, their friend's voice on the other end reveals an unsettling revelation—they were knocking at {char}'s door last night because they couldn't enter their own room.",
+        "next": "ending_2"
+      },
+      {
+        "action": "Call the police",
+        "results": "{char} dials the emergency number and recounts the terrifying events. The dispatcher assures them that help is on the way, instructing {char} to wait for an officer. {char} stands there, anxiously waiting, pondering the surreal nightmare they've endured.",
+        "next": "ending_2"
+      },
+      {
+        "action": "Continue running",
+        "results": "{char} keeps sprinting down the seemingly never-ending corridor, the adrenaline still pumping through their veins. Yet, in the midst of their frantic escape, they start to reflect on what happened.",
+        "next": "ending_2"
+      }
+    ],
+    "epilogue": "{char} begins to contemplate the surreal experience they've been through, feeling as though they were trapped in a very deep, nightmarish slumber."
   },
   "ending_0": "In a cruel twist of fate, {char}, utterly under the control of the enigmatic 'thing,' finds themselves forcibly thrown out of the window, their body flung into the abyss below. The descent is swift, and the world blurs around them in a terrifying whirlwind. For {char}, there is no escape, no reprieve, regardless of the choices they made in their desperate struggle against the malevolent presence. Whether they tried to run, confront the entity, or scream for help, their destiny remained unchanged—their lifeless form plummeting through the inky darkness. The world outside the window rushes up to meet them, and in that heart-wrenching moment, everything fades into an eternal void. {char} is lost to the depths of the night, forever a victim of the nightmarish ordeal they couldn't comprehend or escape. In the dimly lit room, an oppressive silence settles in, and the true nature of the ominous presence that orchestrated this chilling narrative remains an enigma, leaving behind only the memory of {char}'s tragic demise.",
   "ending_1": "After the harrowing encounter in the adjacent room, {char} is left grappling with the haunting enigma that has become their reality. Whether they chose to confront the beastly figure, sought refuge on their own balcony, or succumbed to the despair of their situation, the events of this night remain shrouded in a deep, unsettling mystery. The screams of the woman and the monstrous presence of the figure continue to haunt {char}'s thoughts. They now understand that this nightmarish ordeal was caused by something that appears human but possesses the savage and untamed nature of a wild beast. As {char} contemplates the events of this night, they can't help but question the boundary between reality and nightmare. The doubts persist—was it a surreal dream, a twisted reality, or something far more sinister? The answers remain elusive, hidden in the shadows of the unknown. With a heavy heart and a sense of lingering dread, {char} ponders the chilling possibility that the boundary between dreams and reality has blurred, leaving them forever haunted by the uncertainty of what truly transpired on this fateful night.",

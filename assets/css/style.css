@@ -22,23 +22,81 @@ main {
     margin: 0 auto;
 }
 
-.button {
-    background-color: #ff5722;
+#website-info {
+    font-size: 30px;
+  }  
+
+
+/* username field */
+
+#character-name-input {
+    background-color: #4a4a4a; /* Darker background */
+    color: #ff5722; /* Halloween orange for the text */
+    border: 2px solid #ff5722; /* Halloween orange border */
+    font-family: 'Creepster', cursive; /* Spooky font */
+    font-size: 16px;
+    padding: 8px 12px; /* Some padding for comfort */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Shadow for depth and spookiness */
+    border-radius: 5px; /* Rounded corners for aesthetic */
+    transition: all 0.3s ease; /* Smooth transitions */
+}
+
+#character-name-input:focus {
+    background-color: #6a6a6a; /* Slightly lighter on focus */
+    border-color: #e64a19; /* Brighter border on focus */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8); /* Deeper shadow on focus */
+    outline: none; /* Remove the default browser outline */
+}
+
+#character-name-section label {
+    font-family: 'Creepster', cursive; /* Spooky font for the label as well */
+    color: #ff5722; /* Halloween orange color */
+    margin-right: 8px; /* Some spacing between label and input */
+}
+
+/* start and rules buttons */
+.btn {
+    background-color: #5a2b10;
     border: none;
-    color: #fff;
-    padding: 10px 20px;
+    color: #ff5722;
+    padding: 12px 24px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    font-size: 18px;
+    margin: 10px 5px;
     cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+    border-radius: 8px;
+    font-family: 'Creepster', cursive;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
 }
 
-.button:hover {
-    background-color: #e64a19;
+.btn:before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 87, 34, 0.5);
+    z-index: 1;
+    transform: rotate(-30deg);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #6a3b20;
+    color: #fff;
+}
+
+.btn:hover:before {
+    top: -30%;
+    left: -30%;
+    transform: rotate(30deg);
 }
 
 /* Add some spooky icons or background images */
@@ -116,6 +174,22 @@ a {
   li {
     list-style-type: none;
     margin: 10px
+  }
+
+  /* Media query */
+  @media only screen and (max-width: 600px) {
+    #website-info {
+        font-size: 16px; /* Adjust based on your preference */
+        line-height: 1.6;
+        padding: 10px; /* Provide some space around the text */
+        max-width: 90%; 
+      }
+
+    .button {
+        width: 90%; /* Almost full width on mobile for easy tapping */
+        margin: 10px auto;
+        display: block; /* Stack buttons on top of each other */
+    }    
   }
 
 

@@ -46,6 +46,9 @@ const loadDialogue = (story, scene) => {
   if (dialogue) {
     storyboard.textContent = dialogue;
     loadQuestion(story[scene]);
+    if (story[scene]?.soundOnLoad) {
+      playSound(story[scene].soundOnLoad);
+    }
   } else {
     // Handle end of game screen
     console.error("Dialogue for the current scene not found.");
@@ -80,7 +83,12 @@ const loadChoices = (scene) => {
   document.getElementById("choices").style.display = "flex";
   choices.forEach((choice, index) => {
     choice.innerText = scene.choices[index].action;
-    choice.onclick = () => handleChoice(index);
+    choice.onclick = () => {
+      if (scene.choices[index].sound) {
+        playSound(scene.choices[index].sound);
+      }
+      handleChoice(index);
+    };
   });
 }
 

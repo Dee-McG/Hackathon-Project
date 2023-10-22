@@ -134,9 +134,9 @@ const handleChoice = async (choiceIndex) => {
   else {
     let result = selectedStory[currentSceneKey].choices[choiceIndex].result;
     document.getElementById("storyboard").innerText = `${action}. ${result}`;
-    
+
     loadEpilogue(selectedStory[currentSceneKey]);
-  
+
     const currentScene = selectedStory[currentSceneKey];
     currentSceneKey = currentScene.choices[choiceIndex].next;
     loadDialogue(selectedStory, currentSceneKey);
@@ -149,9 +149,75 @@ const handleChoice = async (choiceIndex) => {
  * @param {ending} Final scene text 
  */
 const endScene = (ending, action) => {
-  let storyBoard =  document.getElementById("storyboard");
+  let storyBoard = document.getElementById("storyboard");
   storyBoard.innerText = action;
   storyBoard.innerHTML += `<p>${selectedStory[ending]}</p>`;
+  storyBoard.innerHTML += `
+  <button id="complete-btn" class="choice">Complete The Story</button>
+`;
+
+  // Add event listener to the Complete button
+  document.getElementById("complete-btn").addEventListener("click", () => {
+    loadEndScreen();
+  });
+}
+
+const loadEndScreen = () => {
+  const storyboard = document.getElementById("storyboard");
+  globalAudio.pause();
+  globalAudio.currentTime = 0;
+  storyboard.innerHTML = `
+    <h2>End of the story</h2>
+    <p>Thank you for taking the time to try out our creation, we hope you have enjoyed the experience and pass the link onto your friends and family. We hope you will come back and try out another of our stories. Have a spooktacular day.</p>
+    <button id="select-story-btn" class="choice" disabled aria-disabled="true">Choose Another Story</button>
+  `;
+
+  const selectStoryBtn = document.getElementById("select-story-btn");
+
+  // Enable the button (slightly longer than the jump scare)
+  setTimeout(() => {
+    selectStoryBtn.removeAttribute("disabled");
+    selectStoryBtn.setAttribute('aria-disabled', 'false');
+  }, 4000);
+
+  // Go back to story selection
+  selectStoryBtn.addEventListener("click", () => {
+    loadStorySelection();
+    storyboard.innerHTML = "";
+  });
+
+  setTimeout(jumpScare, 3000);
+}
+
+const jumpScare = () => {
+  // Play the jumpscare sound
+  let jumpscareAudio = new Audio('assets/sounds/jump-scare.mp3');
+  jumpscareAudio.play();
+
+  // Create and display the jumpscare image
+  let img = document.createElement("img");
+  img.src = 'assets/images/jumpscare-face.png';
+  img.id = "jumpscare-img";
+  img.alt = "A scary face";
+  document.body.appendChild(img);
+  img.style.position = "fixed";
+  img.style.top = "50%";
+  img.style.left = "50%";
+  img.style.width = "0";
+  img.style.height = "0";
+  img.style.transform = "translate(-50%, -50%)";
+  img.style.transition = "width 2s, height 2s";
+  img.style.zIndex = "9999";
+
+  setTimeout(() => {
+    img.style.width = "100vw";
+    img.style.height = "100vh";
+  }, 100);
+
+  // Remove image after animation
+  setTimeout(() => {
+    img.remove();
+  }, 2100);
 }
 
 /**

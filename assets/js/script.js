@@ -308,7 +308,6 @@ document.getElementById("set-character-name-btn").addEventListener("click", func
  */
 function replaceCharWithCharacterName(text) {
   const charName = sessionStorage.getItem("characterName") || "DefaultName";
-  console.log("Replacing {char} with:", charName);
   return text.replace(/{char}/g, charName);
 }
 

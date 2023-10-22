@@ -126,30 +126,35 @@ const loadEpilogue = (scene) => {
 const handleChoice = async (choiceIndex) => {
   document.getElementById("choices").style.display = "none";
   document.getElementById("question").style.display = "none";
+
   let action = selectedStory[currentSceneKey].choices[choiceIndex].action;
 
-  let endScenes = ["scene_three_0", "scene_three_1", "scene_three_2"]
-
-  if (selectedStory[currentSceneKey] in endScenes) {
-    endScene(currentScene.choices[choiceIndex].next);
+  // Loads end if final scene
+  let endScenes = ["scene_three_0", "scene_three_1", "scene_three_2"];
+  if (endScenes.includes(currentSceneKey)) {
+    endScene(selectedStory[currentSceneKey].choices[choiceIndex].next, action);
+  }
+  else {
+    let result = selectedStory[currentSceneKey].choices[choiceIndex].result;
+    document.getElementById("storyboard").innerText = `${action}. ${result}`;
+    
+    loadEpilogue(selectedStory[currentSceneKey]);
+  
+    const currentScene = selectedStory[currentSceneKey];
+    currentSceneKey = currentScene.choices[choiceIndex].next;
+    loadDialogue(selectedStory, currentSceneKey);
   }
 
-  let result = selectedStory[currentSceneKey].choices[choiceIndex].result;
-  document.getElementById("storyboard").innerText = `${action}. ${result}`;
-  
-  loadEpilogue(selectedStory[currentSceneKey]);
-
-  const currentScene = selectedStory[currentSceneKey];
-  currentSceneKey = currentScene.choices[choiceIndex].next;
-  loadDialogue(selectedStory, currentSceneKey);
 }
 
 /**
  * Loads the end scene
  * @param {ending} Final scene text 
  */
-const endScene = (ending) => {
-  document.getElementById("storyboard").innerText = `${ending}`;
+const endScene = (ending, action) => {
+  let storyBoard =  document.getElementById("storyboard");
+  storyBoard.innerText = action;
+  storyBoard.innerHTML += `<p>${selectedStory[ending]}</p>`;
 }
 
 /**

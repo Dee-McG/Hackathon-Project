@@ -218,6 +218,8 @@ const jumpScare = () => {
   setTimeout(() => {
     img.remove();
   }, 2100);
+
+  document.getElementById("scene-image").remove();
 }
 
 /**

@@ -238,6 +238,13 @@ const storiesAndImages = {
     images: [
       "assets/images/island1.jpg",
       "assets/images/island2.jpg",
+      "assets/images/island-beach.jpg",
+      "assets/images/island-building.jpg",
+      "assets/images/island-lights.jpg",
+      "assets/images/island-doorway.jpg",
+      "assets/images/island-scene1.jpg",
+      "assets/images/island-shadow.jpg",
+      "assets/images/island-towards-beach.jpg",
       // ... other desert-island images
     ]
   },
@@ -321,4 +328,31 @@ const playSound = (soundURL, time) => {
     globalAudio.src = soundURL;
     globalAudio.play();
   }, time);
+}
+
+//modal box
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("rules-btn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function () {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }

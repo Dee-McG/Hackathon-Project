@@ -14,8 +14,22 @@
       href="https://fonts.googleapis.com/css2?family=Creepster&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/x-icon" href="assets/icons/icons8-halloween-64.png">
   </head>
   <body>
+    <header>
+      <div class="logo">
+        <a href="/index.html">
+          <img src="assets/icons/icons8-halloween-64.png" alt="App Logo" />
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="#" id="nav-rules-btn">Rules</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <!-- Start Section -->
       <section id="start-section">
@@ -42,13 +56,13 @@
         <div id="character-name-section">
           <label for="character-name-input">Enter character name:</label>
           <input type="text" id="character-name-input">
-          <button id="set-character-name-btn">Set Character Name</button>
+          <button class="btn" id="set-character-name-btn">Set Character Name</button>
         </div>
 
         <!-- Buttons -->
         <div id="buttons">
-          <button id="rules-btn">Rules</button>
-          <button id="start-btn">Start</button>
+          <button class="btn" id="rules-btn">Rules</button>
+          <button class="btn" id="start-btn">Start</button>
         </div>
 
         <!-- The Modal -->
@@ -110,12 +124,18 @@
           <p class="hidden">Thank you for taking the time to try out our creation, we hope you have enjoyed the experience and pass the link onto your friends and family. We hope you will come back and try out another of our stories. Have a spooktacular day.</p>
         </div>
         <div class="btn-container">
-          <a class="home-btn" href="/index.html">Return home</a>
-          
-            
+          <a class="home-btn hidden" href="/index.html">Return home</a>                      
         </div>
       </section>
     </main>
     <script src="assets/js/script.js"></script>
   </body>
+  <footer>
+    <div class="footer-container">
+        <a href="https://github.com/Dee-McG/Hackathon-Project" target="_blank" class="github-icon">
+            <img src="assets/icons/icons8-github-250.png" alt="GitHub" />
+        </a>
+        <p class="copyright-text">&copy; 2023 Your Company or Name</p>
+    </div>
+</footer>
 </html>

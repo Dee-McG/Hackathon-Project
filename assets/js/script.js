@@ -45,8 +45,11 @@ const loadDialogue = (story, scene) => {
   selectedStory = story;
   const dialogue = story[scene]?.dialogue;
   const storyboard = document.querySelector("#storyboard"); // update this once story board is created
-  if (dialogue) {
-    storyboard.textContent = dialogue;
+  // Replace {char} with the playername
+  const replacedDialogue = replaceCharWithCharacterName(dialogue);
+  storyboard.textContent = replacedDialogue;
+  if (replacedDialogue) {
+    storyboard.textContent = replacedDialogue;
     loadQuestion(story[scene]);
     if (story[scene]?.soundOnLoad) {
       playSound(story[scene].soundOnLoad, story[scene].soundOnLoadTimeOut);
@@ -58,9 +61,6 @@ const loadDialogue = (story, scene) => {
   // Load random image for the story
   const sceneImageElement = document.getElementById("scene-image");
   sceneImageElement.src = getRandomSceneImage(story.details.name);
-  // Replace {char} with the playername
-  const replacedDialogue = replaceCharWithCharacterName(dialogue);
-  storyboard.textContent = replacedDialogue;
 };
 
 /**
@@ -129,10 +129,9 @@ const handleChoice = async (choiceIndex) => {
   let result = selectedStory[currentSceneKey].choices[choiceIndex].result;
   document.getElementById("storyboard").innerText = `${action}. ${result}`;
 
-  await new Promise(resolve => setTimeout(resolve, 6000));
+  
   loadEpilogue(selectedStory[currentSceneKey]);
 
-  await new Promise(resolve => setTimeout(resolve, 10000));
 
   const currentScene = selectedStory[currentSceneKey];
   currentSceneKey = currentScene.choices[choiceIndex].next;

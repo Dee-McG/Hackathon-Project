@@ -13,7 +13,8 @@
       {
         "action": "With bated breath, {char} cautiously opens the door,",
         "result": "revealing... an empty, dimly lit corridor",
-        "next": "scene_two_0"
+        "next": "scene_two_0",
+        "hoverSound": "../../assets/sounds/boo-and-laugh-7060.mp3"
       },
       {
         "action": "{char}'s voice quivers as they call out, 'Who's there?'",

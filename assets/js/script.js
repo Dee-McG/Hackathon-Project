@@ -1,6 +1,7 @@
 let startBtn = document.getElementById("start-btn");
 let startSection = document.getElementById("start-section");
 let storySelection = document.getElementById("story-selection-section");
+let hoverSoundTimeout;
 // Add all stories here
 const storyFiles = [
   "desert-island",
@@ -83,14 +84,24 @@ const loadChoices = (scene) => {
   document.getElementById("choices").style.display = "flex";
   choices.forEach((choice, index) => {
     choice.innerText = scene.choices[index].action;
+
+    // Click sound
     choice.onclick = () => {
       if (scene.choices[index].sound) {
         playSound(scene.choices[index].sound);
       }
       handleChoice(index);
     };
+
+    // Hover sound
+    if (scene.choices[index].hoverSound) {
+      choice.addEventListener('mouseover', () => {
+        playHoverSound(scene.choices[index].hoverSound);
+      });
+    }
   });
 }
+
 
 /**
  * Extracts the scene options from the current scene and loads the epilogue into html
@@ -293,4 +304,19 @@ const playSound = (soundURL) => {
   if (!soundURL) return;
   let audio = new Audio(soundURL);
   audio.play();
+}
+
+const playHoverSound = (soundURL) => {
+  if (!soundURL) return;
+
+  // If a sound is currently waiting to be played, clear it
+  if (hoverSoundTimeout) {
+    clearTimeout(hoverSoundTimeout);
+  }
+
+  // Wait a short duration (e.g., 100ms) before playing the hover sound
+  hoverSoundTimeout = setTimeout(() => {
+    let audio = new Audio(soundURL);
+    audio.play();
+  }, 100);
 }

@@ -295,3 +295,7 @@ text-align: center;
     width: 50%;
   }
 }
+
+.name-added-message {
+  color: white;
+}

@@ -311,6 +311,9 @@ document.getElementById("set-character-name-btn").addEventListener("click", func
 
   if (charName) {
     sessionStorage.setItem("characterName", charName);
+
+    const nameAddedMessage = document.querySelector(".name-added-message");
+    nameAddedMessage ? nameAddedMessage.style.display = "block" : "none";
   } else {
     alert("Please enter a character name.");
   }

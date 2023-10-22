@@ -26,6 +26,43 @@ main {
     font-size: 30px;
   }  
 
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #2a2a2a; /* Same as body for uniformity */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Slight shadow for depth */
+  }
+  
+  .logo img {
+    height: 50px; /* Adjust as needed */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-left: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--title-font, cursive);
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ff5722;
+  }
+  
+
 
 /* username field */
 

@@ -63,6 +63,7 @@ const loadDialogue = (story, scene) => {
   sceneImageElement.src = getRandomSceneImage(story.details.name);
 };
 
+
 /**
  * Extracts the scene options from the current scene and loads into html
  * @param {object} scene - Current scene from the story
@@ -126,16 +127,29 @@ const handleChoice = async (choiceIndex) => {
   document.getElementById("choices").style.display = "none";
   document.getElementById("question").style.display = "none";
   let action = selectedStory[currentSceneKey].choices[choiceIndex].action;
+
+  let endScenes = ["scene_three_0", "scene_three_1", "scene_three_2"]
+
+  if (selectedStory[currentSceneKey] in endScenes) {
+    endScene(currentScene.choices[choiceIndex].next);
+  }
+
   let result = selectedStory[currentSceneKey].choices[choiceIndex].result;
   document.getElementById("storyboard").innerText = `${action}. ${result}`;
-
   
   loadEpilogue(selectedStory[currentSceneKey]);
-
 
   const currentScene = selectedStory[currentSceneKey];
   currentSceneKey = currentScene.choices[choiceIndex].next;
   loadDialogue(selectedStory, currentSceneKey);
+}
+
+/**
+ * Loads the end scene
+ * @param {ending} Final scene text 
+ */
+const endScene = (ending) => {
+  document.getElementById("storyboard").innerText = `${ending}`;
 }
 
 /**

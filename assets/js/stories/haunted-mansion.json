@@ -1,9 +1,9 @@
 {
   "details": {
     "name": "haunted-mansion",
-    "about": "lorem ipsum dolor sit amet",
-    "image": "https://answers.flexsim.com/themes/base/admin/img/default-coverImage.png",
-    "alt": "this is the alt"
+    "about": "A dark errie mansion, a group of friends, and its halloween what horrors are the friends going to find inside if they even dare to enter.",
+    "image": "assets/images/haunted-mansion1.jpg",
+    "alt": "Picture of an old mansion"
   },
   "scene_one": {
     "dialogue": "Standing in front of a mysterious and eerie mansion on a dark Halloween night, {char} a group of friends contemplate their options. The wind howls and the trees sway ominously, {char} adding to the eerie atmosphere.",
@@ -47,12 +47,12 @@
       {
         "action": "Ethan suggests investigating the creepy basement.",
         "result": "I'll investigate the creepy basement. Maybe we'll find something useful there.",
-        "next": "scene_three_0"
+        "next": "scene_three_1"
       },
       {
         "action": "Alex proposes searching the living room.",
         "result": "I'll search the living room. Hopefully, we'll find a way out.",
-        "next": "scene_three_0"
+        "next": "scene_three_2"
       }
     ],
     "epilogue": "Alex's nervousness proved justified as the group entered the mansion cautiously. {char} The door slammed shut behind them, sealing their fate. Now, in the dimly lit hallway with three doors, {char} they must face the horrors that lie ahead."
@@ -68,17 +68,17 @@
       {
         "action": "Alex",
         "result": "Quick, let's hide in the nearby graveyard!",
-        "next": "scene_three_3"
+        "next": "scene_three_0"
       },
       {
         "action": "Emily",
         "result": "No, that's too obvious. Let's seek refuge in that nearby abandoned cabin.",
-        "next": "scene_three_4"
+        "next": "scene_three_1"
       },
       {
         "action": "Ethan",
         "result": "No time to waste! Let's try to outrun the ghost and find a safe place.",
-        "next": "scene_three_5"
+        "next": "scene_three_2"
       }
     ],
     "epilogue": "Emily's boldness emboldened the group as they sprinted away from the mansion. {char} However, a ghostly figure pursued them relentlessly, turning their Halloween night into a heart-pounding race for survival. {char}"
@@ -94,17 +94,17 @@
       {
         "action": "Emily",
         "result": "Let's go left. It's always good to start from the left, right?",
-        "next": "scene_three_6"
+        "next": "scene_three_0"
       },
       {
         "action": "Ethan",
         "result": "No, I have a feeling we should explore the room on the right.",
-        "next": "scene_three_7"
+        "next": "scene_three_1"
       },
       {
         "action": "Alex",
         "result": "Or maybe we should just proceed straight ahead to the end of the hallway.",
-        "next": "scene_three_8"
+        "next": "scene_three_2"
       }
     ],
     "epilogue": "Ethan's intuition guided the group as they cautiously entered the mansion. {char} The door creaked open, revealing a dimly lit hallway with three doors. Little did they know, their choices would determine their fate. {char}{char}"
@@ -120,22 +120,17 @@
       {
         "action": "Alex",
         "result": "This is not good! We need to get out of here!",
-        "next": "scene_three_9"
+        "next": "ending_0"
       },
       {
         "action": "Emily",
         "result": "Quick, let's escape through the window before those dolls reach us!",
-        "next": "scene_three_10"
+        "next": "ending_1"
       },
       {
         "action": "Ethan",
         "result": "Wait, maybe we can try to calm the dolls down. They might not be as dangerous as they seem.",
-        "next": "scene_three_11"
-      },
-      {
-        "action": "Emily",
-        "result": "No time for that! Let's search for a hidden passage. There must be another way out!",
-        "next": "scene_three_12"
+        "next": "ending_2"
       }
     ],
     "epilogue": "Emily's quick thinking and determination paid off as they managed to escape through the window just in time. The dolls, unable to follow, returned to their lifeless state. The friends regrouped outside, relieved to have evaded the danger lurking in the room. {char} They continued their search for a hidden passage, hoping to find another way out of the mansion. {char}"
@@ -151,22 +146,17 @@
       {
         "action": "Alex",
         "result": "Oh no, a vampire! We need to act fast!",
-        "next": "scene_three_13"
+        "next": "ending_0"
       },
       {
         "action": "Emily",
         "result": "I'll try to find a wooden stake. It's our best chance to fight the vampire off!",
-        "next": "scene_three_14"
+        "next": "ending_1"
       },
       {
         "action": "Ethan",
         "result": "Wait, let's look for an escape route. We can't take on a vampire!",
-        "next": "scene_three_15"
-      },
-      {
-        "action": "Alex",
-        "result": "Maybe we can reason with the vampire. It's worth a shot before resorting to violence.",
-        "next": "scene_three_16"
+        "next": "ending_2"
       }
     ],
     "epilogue": "Emily's resourcefulness saved the day as they found a wooden stake and successfully fought off the vampire. With the vampire defeated, {char} they continued their exploration of the mansion, now more cautious than ever. {char} They knew there were more mysteries to unravel and dangers to overcome."
@@ -182,21 +172,16 @@
       {
         "action": "Alex",
         "result": "Look, a hidden compartment! Let's see what's inside.",
-        "next": "scene_three_17"
+        "next": "ending_0"
       },
       {
         "action": "Emily",
         "result": "A rusty key? Maybe it unlocks a door or a secret passage.",
-        "next": "ending_0"
+        "next": "ending_1"
       },
       {
         "action": "Ethan",
         "result": "This mysterious potion could be useful. Let's keep it with us.",
-        "next": "ending_1"
-      },
-      {
-        "action": "Alex",
-        "result": "And this worn-out diary might contain valuable information. Let's read it carefully.",
         "next": "ending_2"
       }
     ],

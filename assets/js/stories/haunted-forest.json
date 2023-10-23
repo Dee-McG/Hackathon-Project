@@ -1,15 +1,17 @@
 {
   "details": {
     "name": "haunted-forest",
-    "about": "lorem ipsum dolor sit amet",
-    "image": "https://answers.flexsim.com/themes/base/admin/img/default-coverImage.png",
-    "alt": "this is the alt"
+    "about": "Take a wild adventure through a haunted forest, with twists and turns at every corner. With dangers lurking all around, can you choose the right path to stay alive?",
+    "image": "assets/images/haunted-forest/forest1.jpeg",
+    "alt": "Haunted Forest Image"
   },
   "scene_one": {
     "soundOnLoad": "assets/sounds/wolf-howling.mp3",
     "soundOnLoadTimeOut": 2000,
     "images": [
-      "assets/images/forest2.jpg"
+      "assets/images/haunted-forest/fog-1.jpeg",
+      "assets/images/haunted-forest/fog-2.jpeg",
+      "assets/images/haunted-forest/fog-3.jpeg"
     ],
     "dialogue": "The forest was alive with the sounds of the night. From the gentle rustling of leaves to the distant hoots of an owl, everything felt eerily serene. However, as {char} ventured deeper into the woods, the atmosphere shifted. Ancient trees with twisted limbs blocked out the moonlight, and a thick, suffocating mist rolled in. Before {char} stood three dilapidated mansions, each more menacing than the last.",
     "question": "Which mansion will you enter, {char}?",
@@ -42,7 +44,9 @@
     "soundOnLoad": "assets/sounds/a-piano-with-a-creepy-atmosphere-for-scary-stories-demo-version-158423.mp3",
     "soundOnLoadTimeOut": 2000,
     "images": [
-      "assets/images/forest2.jpg"
+      "assets/images/haunted-forest/rose.jpeg",
+      "assets/images/haunted-forest/rose-1.jpeg",
+      "assets/images/haunted-forest/rose-2.jpeg"
     ],
     "dialogue": "Upon entering the Whispering Willow, {char} was met by an eerie silence. Suddenly, a soft voice whispered their name. Following the sound, they came across a spectral lady in a white gown, her eyes hollow and filled with sorrow. With a mournful sigh, she handed {char} a wilted rose.",
     "question": "What will you do next, {char}?",
@@ -75,7 +79,9 @@
     "soundOnLoad": "assets/sounds/a-piano-with-a-creepy-atmosphere-for-scary-stories-demo-version-158423.mp3",
     "soundOnLoadTimeOut": 2000,
     "images": [
-      "assets/images/forest2.jpg"
+      "assets/images/haunted-forest/crypt-1.jpeg",
+      "assets/images/haunted-forest/crypt-2.jpeg",
+      "assets/images/haunted-forest/crypt-3.jpeg"
     ],
     "dialogue": "Inside the Cursed Crypt, dark shadows danced upon the walls, and a chill ran down {char}'s spine. In the heart of the mansion, an ancient crypt awaited, guarded by statues of grotesque creatures.",
     "question": "What's your next move, {char}?",
@@ -108,7 +114,9 @@
     "soundOnLoad": "assets/sounds/a-piano-with-a-creepy-atmosphere-for-scary-stories-demo-version-158423.mp3",
     "soundOnLoadTimeOut": 2000,
     "images": [
-      "assets/images/forest2.jpg"
+      "assets/images/haunted-forest/haunted-dancing-1.jpeg",
+      "assets/images/haunted-forest/haunted-dancing-2.jpeg",
+      "assets/images/haunted-forest/haunted-dancing-3.jpeg"
     ],
     "dialogue": "Within the Phantom Palace, the grand ballroom was alive with ghostly figures dancing to a haunting melody. An elegant phantom beckoned {char} to join the dance.",
     "question": "Do you dare dance, {char}?",
@@ -141,7 +149,7 @@
     "soundOnLoad": "assets/sounds/forest-rain-atmo-fantasy.mp3",
     "soundOnLoadTimeOut": 2000,
     "images": [
-      "assets/images/forest2.jpg"
+      "assets/images/haunted-forest/creepy-wall.jpeg"
     ],
     "dialogue": "{char} found themselves in a chamber filled with portraits of previous visitors. Each portrait captured the very essence of its subject, their eyes filled with terror and regret.",
     "question": "What will you do, {char}?",
@@ -174,7 +182,9 @@
     "soundOnLoad": "assets/sounds/forest-rain-atmo-fantasy.mp3",
     "soundOnLoadTimeOut": 2000,
     "images": [
-      "assets/images/forest2.jpg"
+      "assets/images/haunted-forest/library-1.jpeg",
+      "assets/images/haunted-forest/library-2.jpeg",
+      "assets/images/haunted-forest/library-3.jpeg"
     ],
     "dialogue": "Stumbling upon a decrepit library, {char} noticed a glowing book. The title read: 'The Secrets of the Mansion.'",
     "question": "Will you open it, {char}?",
@@ -207,7 +217,9 @@
     "soundOnLoad": "assets/sounds/forest-rain-atmo-fantasy.mp3",
     "soundOnLoadTimeOut": 2000,
     "images": [
-      "assets/images/forest2.jpg"
+      "assets/images/haunted-forest/mermaid-1.jpeg",
+      "assets/images/haunted-forest/mermaid-2.jpeg",
+      "assets/images/haunted-forest/mermaid-3.jpeg"
     ],
     "dialogue": "Suddenly, {char} was face to face with the mastermind behind the mansion's curse, a malevolent spirit seeking eternal companionship.",
     "question": "How will you confront the spirit, {char}?",

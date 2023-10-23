@@ -1,110 +1,128 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Spooktacular Stories
 
-Welcome Stephen Opoku,
+![Mockup](assets/images/mockup.PNG)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Spooktacular Stories is a javascript based interactive story built by team #Zombie Hackers for the Code Institute Halloween Hackathon, PhantomForge.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Features
 
-## Gitpod Reminders
+* Interactive story with user selected options to control the story
+* Multiple images per scene with a random one being selected each time
+* Sounds playing on each scence, hand selected to match the theme
+* Responsive on all devices
+* Replayable due to different web of stories based on selections
+* Spooky favicon
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### Future Features
 
-`python3 -m http.server`
+Use image generation API to generate a new image each time the story loads. A spike was done on this with 3 different AI and working locally, unfortunately the cost was too high to be feesable for this project. Maybe in the future when costs or down or a completely free one is found, it could be added back in.
 
-A blue button should appear to click: _Make Public_,
+## Wireframes
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+<details>
+  <summary>Start Screen
+  </summary>
 
-A blue button should appear to click: _Make Public_,
+![Wireframe](assets/wireframes/start-screen.png)
+</details>
 
-Another blue button should appear to click: _Open Browser_.
+<details>
+  <summary>Storyboard</summary>
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+![Wireframe](assets/wireframes/story-board-design.png)
+</details>
 
-To log into the Heroku toolbelt CLI:
+<details>
+  <summary>Story Selection</summary>
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+![Wireframe](assets/wireframes/story-selection-page.png)
+</details>
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+<details>
+  <summary>Header & Footer</summary>
 
-------
+![Wireframe-1](assets/wireframes/Header_Footer_1.png)
 
-## Release History
+![Wireframe-2](assets/wireframes/Header_Footer_2.png)
+</details>
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+<details>
+  <summary>End Screen</summary>
 
-**September 20 2023:** Update Python version to 3.9.17.
+![Wireframe](assets/wireframes/end-page.png)
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+</details>
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+## Adding a new Story
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+A new story can be added by creating a new json file with the story name under the assets/js/stories folder. It must keep the same structure as the stories already present. Replace details in each section with your own story information.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+Inside the assets/js/script.js file, add the story to the storyFiles array at the top of the file:
 
 ```
-pkill uptime.sh
-rm .vscode/uptime.sh
+const storyFiles = [
+  "desert-island",
+  "haunted-forest",
+  "haunted-hotel",
+  "haunted-mansion",
+  "pirate-ship",
+];
 ```
 
-**Anything more?**
+Providing the correct structure of the JSON file, the story will automatically be loaded into the story selection screen and work with only these updates. Custom images will need to be added into the image folder and those links updated in the json, else the default image will be loaded if none are provided.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+Sounds for the story can be found in assets/sounds folder. Should new ones be required, they can be uploaded here.
 
----
+## Testing
 
-Happy coding!
+## Deployment
+
+### Version Control
+
+The following commands were used to get the code from local machine to github:
+
+```
+git add <filename> - Add the file to the queue
+git commit -m "message" - Sets the message for the commit
+git push - Push all code to safety of github
+```
+
+### Github Pages
+
+The site was deployed to Github pages by the following steps:
+
+1. Open the project repository
+2. Navigate to the settings tab
+3. Select 'Pages' from the left menu
+4. Select a branch 'main'
+5. Click 'Save'
+
+Live Link: https://dee-mcg.github.io/Hackathon-Project/
+
+### Clone
+
+To clone the project for local use, open your IDE of choice and type the following into the terminal followed by the enter key:
+
+```
+git clone https://github.com/Dee-McG/Hackathon-Project.git
+```
+
+## Credits
+
+### Tools Used
+
+[Deep AI](https://deepai.org/) - Used to generate most of the images for the story
+
+[chatGPT](https://openai.com/blog/chatgpt) - Used to generate some of the story lines
+
+### Developers
+
+* [Lisa Tinmurth](https://github.com/Mrst12) 
+* [Mohamed Ayman](https://github.com/moabdelbasset)
+* [Stephen Opoku](https://github.com/Stephenkofipoku)
+* [Jack T](https://github.com/JackTubby)
+* [Rachel Conlon](https://github.com/rachelconlon)           
+* [Dee McGirr](https://github.com/Dee-McG)
+            

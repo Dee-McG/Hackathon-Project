@@ -76,6 +76,7 @@ Providing the correct structure of the JSON file, the story will automatically b
 Sounds for the story can be found in assets/sounds folder. Should new ones be required, they can be uploaded here.
 
 ## Testing
+The live site has been tested, all links seem to work, stories run through to the end, sounds and effects working, rules modal working, home and logo work to take back to the home page.
 
 ## Deployment
 

@@ -13,6 +13,10 @@ Spooktacular Stories is a javascript based interactive story built by team #Zomb
 * Replayable due to different web of stories based on selections
 * Spooky favicon
 
+### Future Features
+
+Use image generation API to generate a new image each time the story loads. A spike was done on this with 3 different AI and working locally, unfortunately the cost was too high to be feesable for this project. Maybe in the future when costs or down or a completely free one is found, it could be added back in.
+
 ## Wireframes
 
 
